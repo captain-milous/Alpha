@@ -1,111 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPredmet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Predmet>
-    <Nazev>Bez názvu</Nazev>
-    <Zkratka>N/A</Zkratka>
-    <Typ>Teorie</Typ>
-    <HodinTydne>0</HodinTydne>
-  </Predmet>
-  <Predmet>
     <Nazev>Anglický Jazyk</Nazev>
     <Zkratka>A</Zkratka>
     <Typ>Teorie</Typ>
     <HodinTydne>4</HodinTydne>
-</Predmet>
-<Predmet>
+  </Predmet>
+  <Predmet>
     <Nazev>Aplikovaná matematika</Nazev>
     <Zkratka>AM</Zkratka>
     <Typ>Teorie</Typ>
     <HodinTydne>2</HodinTydne>
-</Predmet>
-<Predmet>
+  </Predmet>
+  <Predmet>
     <Nazev>Český jazyk a literatura</Nazev>
     <Zkratka>C</Zkratka>
     <Typ>Teorie</Typ>
     <HodinTydne>3</HodinTydne>
-</Predmet>
-<Predmet>
+  </Predmet>
+  <Predmet>
     <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
     <Zkratka>CIT</Zkratka>
     <Typ>Cviceni</Typ>
     <HodinTydne>2</HodinTydne>
-</Predmet>
-<Predmet>
+  </Predmet>
+  <Predmet>
     <Nazev>Databázové systémy (Teorie)</Nazev>
     <Zkratka>DS</Zkratka>
     <Typ>Teorie</Typ>
     <HodinTydne>1</HodinTydne>
-</Predmet>
-<Predmet>
+  </Predmet>
+  <Predmet>
     <Nazev>Databázové systémy (Cvičení)</Nazev>
     <Zkratka>DS</Zkratka>
     <Typ>Cviceni</Typ>
     <HodinTydne>2</HodinTydne>
-</Predmet>
-<Predmet>
-            <Nazev>Matematika</Nazev>
-            <Zkratka>M</Zkratka>
-            <Typ>Teorie</Typ>
-            <HodinTydne>4</HodinTydne>
-</Predmet>
-<Predmet>
-            <Nazev>Podnikové informační systémy (Teorie)</Nazev>
-            <Zkratka>PIS</Zkratka>
-            <Typ>Teorie</Typ>
-            <HodinTydne>2</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
-            <Zkratka>PIS</Zkratka>
-            <Typ>Cviceni</Typ>
-            <HodinTydne>2</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
-            <Zkratka>PSS</Zkratka>
-            <Typ>Teorie</Typ>
-            <HodinTydne>1</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
-            <Zkratka>PSS</Zkratka>
-            <Typ>Cviceni</Typ>
-            <HodinTydne>2</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Programové vybavení (Teorie)</Nazev>
-            <Zkratka>PV</Zkratka>
-            <Typ>Teorie</Typ>
-            <HodinTydne>1</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Programové vybavení (Cvičení)</Nazev>
-            <Zkratka>PV</Zkratka>
-            <Typ>Cviceni</Typ>
-            <HodinTydne>2</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Technický projekt</Nazev>
-            <Zkratka>TP</Zkratka>
-            <Typ>Teorie</Typ>
-            <HodinTydne>1</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Webové aplikace (Teorie)</Nazev>
-            <Zkratka>WA</Zkratka>
-            <Typ>Teorie</Typ>
-            <HodinTydne>1</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Webové aplikace (Cvičení)</Nazev>
-            <Zkratka>WA</Zkratka>
-            <Typ>Cviceni</Typ>
-            <HodinTydne>2</HodinTydne>
-        </Predmet>
-        <Predmet>
-            <Nazev>Tělesná Výchova</Nazev>
-            <Zkratka>TV</Zkratka>
-            <Typ>Cviceni</Typ>
-            <HodinTydne>2</HodinTydne>
-        </Predmet>
+  </Predmet>
+  <Predmet>
+    <Nazev>Matematika</Nazev>
+    <Zkratka>M</Zkratka>
+    <Typ>Teorie</Typ>
+    <HodinTydne>4</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+    <Zkratka>PIS</Zkratka>
+    <Typ>Teorie</Typ>
+    <HodinTydne>2</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+    <Zkratka>PIS</Zkratka>
+    <Typ>Cviceni</Typ>
+    <HodinTydne>2</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+    <Zkratka>PSS</Zkratka>
+    <Typ>Teorie</Typ>
+    <HodinTydne>1</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+    <Zkratka>PSS</Zkratka>
+    <Typ>Cviceni</Typ>
+    <HodinTydne>2</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Programové vybavení (Teorie)</Nazev>
+    <Zkratka>PV</Zkratka>
+    <Typ>Teorie</Typ>
+    <HodinTydne>1</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Programové vybavení (Cvičení)</Nazev>
+    <Zkratka>PV</Zkratka>
+    <Typ>Cviceni</Typ>
+    <HodinTydne>2</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Technický projekt</Nazev>
+    <Zkratka>TP</Zkratka>
+    <Typ>Teorie</Typ>
+    <HodinTydne>1</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Webové aplikace (Teorie)</Nazev>
+    <Zkratka>WA</Zkratka>
+    <Typ>Teorie</Typ>
+    <HodinTydne>1</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Webové aplikace (Cvičení)</Nazev>
+    <Zkratka>WA</Zkratka>
+    <Typ>Cviceni</Typ>
+    <HodinTydne>2</HodinTydne>
+  </Predmet>
+  <Predmet>
+    <Nazev>Tělesná Výchova</Nazev>
+    <Zkratka>TV</Zkratka>
+    <Typ>Cviceni</Typ>
+    <HodinTydne>2</HodinTydne>
+  </Predmet>
 </ArrayOfPredmet>

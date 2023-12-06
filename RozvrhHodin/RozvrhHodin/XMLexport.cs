@@ -8,9 +8,9 @@ using System.Xml.Serialization;
 
 namespace RozvrhHodin
 {
-    public class ExportXML
+    public class XMLexport
     {
-        public static void Predmet(List<Predmet> dataList, string fileName)
+        public static void ExportPredmet(List<Predmet> dataList, string fileName)
         {
             // Create an instance of XmlSerializer
             XmlSerializer serializer = new XmlSerializer(typeof(List<Predmet>));
