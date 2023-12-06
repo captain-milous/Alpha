@@ -68,7 +68,7 @@ namespace RozvrhHodin
         public Predmet()
         {
             Nazev = "Bez názvu";
-            Zkratka = "N/a";
+            Zkratka = "N/A";
             Typ = TypVyuky.Teorie;
             HodinTydne = 0;
         }
