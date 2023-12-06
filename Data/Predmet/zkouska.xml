@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPredmet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Predmet>
+    <Nazev>Bez názvu</Nazev>
+    <Zkratka>N/A</Zkratka>
+    <Typ>Teorie</Typ>
+    <HodinTydne>0</HodinTydne>
+  </Predmet>
+</ArrayOfPredmet>
