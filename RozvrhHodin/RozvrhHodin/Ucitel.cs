@@ -8,6 +8,7 @@ namespace RozvrhHodin
 {
     public class Ucitel
     {
+        #region Vlastnosti
         private string celeJmeno;
         private string zkratka;
         private string tridniUcitel;
@@ -52,7 +53,8 @@ namespace RozvrhHodin
         }
         public string TridniUcitel { get { return tridniUcitel; } set { tridniUcitel = value; } }
         public List<Predmet> VyucovanePredmety { get { return vyucovanePredmety; } set { vyucovanePredmety = value; } }
-
+        #endregion
+        #region Konstruktory
         public Ucitel()
         {
             CeleJmeno = "Bez jména";
@@ -76,11 +78,48 @@ namespace RozvrhHodin
             TridniUcitel = tridnictvi;
             VyucovanePredmety = vyucPred;
         }
-
+        #endregion
+        #region ToString()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return base.ToString();
         }
+        #endregion
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="predmet"></param>
+        public void PridejVyucPredmet(Predmet predmet)
+        {
+            if (!VyucovanePredmety.Contains(predmet))
+            {
+                VyucovanePredmety.Add(predmet);
+            }
+            else
+            {
+                throw new Exception($"Učitel již vyučuje předmět {predmet.Nazev}.");
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="predmet"></param>
+        public void OdeberVyucPredmet(Predmet predmet)
+        {
+            VyucovanePredmety.RemoveAll(p => p == predmet);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public void OdeberVsechnyVyucPredmety()
+        {
+            VyucovanePredmety.Clear();
+        }
+        
     }
 }
