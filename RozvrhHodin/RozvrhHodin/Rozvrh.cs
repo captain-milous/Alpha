@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace RozvrhHodin
 {
     public class Rozvrh
-    {
-        
+    {        
         private string nazev;
         private string trida;
         private List<Den> tyden;
