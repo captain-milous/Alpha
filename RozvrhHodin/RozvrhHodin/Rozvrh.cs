@@ -21,9 +21,9 @@ namespace RozvrhHodin
 
         public Rozvrh()
         {
-            Nazev = "Bez názvu";
-            Trida = string.Empty;
-            Tyden = VytvorTyden();
+            Nazev = "Originál";
+            Trida = "C4b";
+            Tyden = VytvorTydenOriginal();
             Hodnoceni = 100;
         }
         public Rozvrh(string nazev, string trida)
@@ -43,17 +43,23 @@ namespace RozvrhHodin
             }
             return output;
         }
+        private List<Den> VytvorTydenOriginal()
+        {
+            List<Den> output = VytvorTyden();
+
+            return output;
+        }
 
         public override string ToString()
         {
-            string output = "| Rozvrh " + Nazev + " pro třídu " + Trida + ":\n";
+            string output = "    Rozvrh " + Nazev + " pro třídu " + Trida + ":\n";
             string line = "+----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+\n";
-            output = line + output + line + ;
+            output = output + line + "|    |  1h |  2h |  3h |  4h |  5h |  6h |  7h |  8h |  9h | 10h |\n" + line;
             for (int i = 0;i < Tyden.Count; i++)
             {
                 output = output + Tyden[i].ToString() + "\n" + line;
             }
-            return output + "| Hodnocení: " + Hodnoceni +" bodů\n"+line;
+            return output + "    Hodnocení: " + Hodnoceni +" bodů\n";
         }
 
     }
