@@ -19,6 +19,10 @@ namespace RozvrhHodin
         private Ucitel ucitel;
 
         public bool Volna { get { return volna; } set {  volna = value; } }
+        /// <summary>
+        /// Reprezentuje předmět, který může být přiřazen do hodiny. 
+        /// Pokud je hodina volná, předmět je null. Pokud není volná,lze přiřadit pouze předměty odpovídajícího typu učebny.
+        /// </summary>
         public Predmet Predmet 
         { 
             get 
@@ -36,14 +40,33 @@ namespace RozvrhHodin
             {
                 if (!Volna)
                 {
-                    predmet = value;
-                } else
+                    if(Ucebna != null) 
+                    { 
+                        if(Ucebna.Typ == value.Typ)
+                        {
+                            predmet = value;
+                        }
+                        else
+                        {
+                            throw new Exception("Předmět není určný pro tento typ učebny.");
+                        }
+                    }
+                    else
+                    {
+                        predmet = value;
+                    }
+                } 
+                else
                 {
                     predmet = null;
                 }
                  
             } 
         }
+        /// <summary>
+        /// Reprezentuje učebnu ve které se hodina odehrává.
+        /// Pokud je hodina volná, učebna je null. Pokud není volná,lze přiřadit pouze učebny odpovídajícího typu vyučovaného předmětu.
+        /// </summary>
         public Ucebna Ucebna 
         {
             get
@@ -61,7 +84,21 @@ namespace RozvrhHodin
             {
                 if (!Volna)
                 {
-                    ucebna = value;
+                    if (Predmet != null)
+                    {
+                        if (Predmet.Typ == value.Typ)
+                        {
+                            ucebna = value;
+                        }
+                        else
+                        {
+                            throw new Exception("Učebna není určná pro tento typ výuky.");
+                        }
+                    }
+                    else
+                    {
+                        ucebna = value;
+                    }
                 }
                 else
                 {
@@ -102,6 +139,14 @@ namespace RozvrhHodin
             Predmet = new Predmet();
             Ucebna = new Ucebna();
             Ucitel = new Ucitel();  
+        }
+
+        public Hodina(Predmet predmet)
+        {
+            Volna = false;
+            Predmet = predmet;
+            Ucebna = null;
+            Ucitel = null;
         }
 
         public Hodina(Predmet predmet, Ucebna ucebna, Ucitel ucitel)
