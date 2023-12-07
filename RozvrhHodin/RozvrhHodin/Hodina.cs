@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -109,6 +110,48 @@ namespace RozvrhHodin
             Predmet = predmet;
             Ucebna = ucebna;
             Ucitel = ucitel;
+        }
+
+        public override string ToString()
+        {
+            if(Volna)
+            {
+                return "   ";
+            }
+            else
+            {
+                string zkratka = ZkratkaHodiny();
+                if(zkratka.Length < 4)
+                {
+                    switch(zkratka.Length)
+                    {
+                        case 0:
+                            zkratka = "   ";
+                            break;
+                        case 1:
+                            zkratka = " " + zkratka + " ";
+                            break;
+                        case 2:
+                            zkratka = zkratka + " ";
+                            break;
+                        case 3:
+                            zkratka = zkratka;
+                            break;
+                        default:
+                            throw new Exception("Tento případ by neměl nastat");
+                    }
+                }
+                else
+                {
+                    zkratka = new string(zkratka.Take(3).ToArray());
+                }
+                return zkratka;
+            }
+        }
+
+        public string ZkratkaHodiny()
+        {
+            return Predmet.Zkratka;
         }
     }
 }

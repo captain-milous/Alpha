@@ -12,6 +12,7 @@ namespace RozvrhHodin
         protected string kmenovaTrida;
         protected TypVyuky typ;
         protected List<Predmet> vyucovanePredmety;
+
         public string KmenovaTrida { get; set; }
         public TypVyuky Typ { get; set; }
         public List<Predmet> VyucovanePredmety { get; set; }
