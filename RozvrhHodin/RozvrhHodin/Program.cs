@@ -14,41 +14,30 @@ namespace RozvrhHodin
         [STAThread]
         static void Main()
         {
-            Den test = new Den();/*
-            Den test2 = new Den(Dny.Pondeli);
-            Den test3 = new Den(Dny.Ctvrtek);*/
+            
             /*
             Rozvrh r1 = new Rozvrh();
             Predmet pr1 = new Predmet();
             Predmet pr2 = new Predmet("Test", "T", TypVyuky.Teorie, 0);
+            */
+            
+            Console.WriteLine();
 
-            List<Predmet> p = new List<Predmet>();
 
-            p.Add(pr1);
-            p.Add(pr2);
+            List<Ucitel> ucitele = new List<Ucitel>();
 
-            Console.WriteLine(p);
+            ucitele.Add(new Ucitel());
+            ucitele.Add(new Ucitel());
 
-            Ucebna u = new Ucebna("24", 4, "C4b", TypVyuky.Teorie, p);
-            List<Ucebna> ucebny = new List<Ucebna>();
-            ucebny.Add(u);*/
 
-            List<Ucebna> ucebny = XMLimport.ImportUcebna("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucebna\\import.xml");
-
-            XMLexport.ExportUcebna(ucebny, "C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucebna\\import.xml");
-
-            //Console.WriteLine(r1);
-            Console.WriteLine();/*
-            Console.WriteLine(test2);
-            Console.WriteLine(test3);*/
+            // List<Predmet> predmety = XMLimport.ImportPredmet("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Predmet\\import.xml");
+            // List<Ucebna> ucebny = XMLimport.ImportUcebna("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucebna\\import.xml");
+            // List<Ucitel> ucitele = XMLimport.ImportUcitel("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucitel\\import.xml");
 
 
             /*
-            List<Predmet> predmety = XMLimport.ImportPredmet("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Predmet\\import.xml");
-            predmety.Add(new Predmet());
-            XMLexport.ExportPredmet(predmety, "C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Predmet\\zkouska.xml");*/
-
-            /*
+             * Fungování aplikace
+             * 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());*/
