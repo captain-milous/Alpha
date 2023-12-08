@@ -11,7 +11,9 @@ namespace RozvrhHodin
         #region Vlastnosti
         protected string nazev;
         protected int patro;
-
+        /// <summary>
+        /// 
+        /// </summary>
         public string Nazev
         {
             get { return nazev; }
@@ -27,6 +29,9 @@ namespace RozvrhHodin
                 }
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public int Patro
         {
             get { return patro; }
