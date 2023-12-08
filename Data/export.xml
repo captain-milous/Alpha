@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUcebna xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ucebna>
+    <Nazev>24</Nazev>
+    <Patro>4</Patro>
+    <KmenovaTrida>C4b</KmenovaTrida>
+    <Typ>Teorie</Typ>
+    <VyucovanePredmety>
+      <Predmet>
+        <Nazev>Bez názvu</Nazev>
+        <Zkratka>N/A</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>0</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Test</Nazev>
+        <Zkratka>T</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>0</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
+  </Ucebna>
+</ArrayOfUcebna>

@@ -59,6 +59,8 @@ namespace RozvrhHodin
                     Nazev = "Pátek";
                     Zkratka = "Pa";
                     break;
+                default:
+                    break;
             }
         }
 

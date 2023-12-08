@@ -34,7 +34,7 @@ namespace RozvrhHodin
             {
                 if (value >= 0 && value < 5)
                 {
-                    Patro = value;
+                    patro = value;
                 }
                 else
                 {

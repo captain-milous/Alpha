@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUcebna xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Ucebna>
+    <Nazev>24</Nazev>
+    <Patro>4</Patro>
+    <KmenovaTrida>C4b</KmenovaTrida>
+    <Typ>Teorie</Typ>
+    <VyucovanePredmety>
+      <Predmet>
+        <Nazev>Bez názvu</Nazev>
+        <Zkratka>N/A</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>0</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Test</Nazev>
+        <Zkratka>T</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>0</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
+  </Ucebna>
+  <Ucebna>
+            <column name="id">1</column>
+            <Nazev>Uč 1</column>
+            <Patro>1</column>
+            <Typ>TE</column>
+            <KmenovaTrida>A1</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">2</column>
+            <Nazev>Uč 2</column>
+            <Patro>1</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C1a</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">3</column>
+            <Nazev>Uč 3</column>
+            <Patro>1</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C1b</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">4</column>
+            <Nazev>Uč 4</column>
+            <Patro>1</column>
+            <Typ>TE</column>
+            <KmenovaTrida>A3a</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">5</column>
+            <Nazev>Uč 5</column>
+            <Patro>1</column>
+            <Typ>TE</column>
+            <KmenovaTrida>None</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">6</column>
+            <Nazev>Uč 6</column>
+            <Patro>2</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C1c</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">7</column>
+            <Nazev>Uč 7</column>
+            <Patro>2</column>
+            <Typ>TE</column>
+            <KmenovaTrida>E1</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">8</column>
+            <Nazev>Uč 8</column>
+            <Patro>2</column>
+            <Typ>CV</column>
+            <KmenovaTrida>None</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">9</column>
+            <Nazev>Uč 9</column>
+            <Patro>2</column>
+            <Typ>TE</column>
+            <KmenovaTrida>A2a</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">10</column>
+            <Nazev>Uč 10</column>
+            <Patro>2</column>
+            <Typ>TE</column>
+            <KmenovaTrida>A2b</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">11</column>
+            <Nazev>Uč 11</column>
+            <Patro>2</column>
+            <Typ>TE</column>
+            <KmenovaTrida>A3b</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">12</column>
+            <Nazev>Uč 12</column>
+            <Patro>2</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C3a</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">13</column>
+            <Nazev>Uč 13</column>
+            <Patro>2</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C2c</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">14</column>
+            <Nazev>Uč 14</column>
+            <Patro>3</column>
+            <Typ>TE</column>
+            <KmenovaTrida>E2</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">15</column>
+            <Nazev>Uč 15</column>
+            <Patro>3</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C2a</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">16</column>
+            <Nazev>Uč 16</column>
+            <Patro>3</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C2b</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">17</column>
+            <Nazev>Uč 17</column>
+            <Patro>3</column>
+            <Typ>CV</column>
+            <KmenovaTrida>None</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">18</column>
+            <Nazev>Uč 18</column>
+            <Patro>3</column>
+            <Typ>CV</column>
+            <KmenovaTrida>None</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">19</column>
+            <Nazev>Uč 19</column>
+            <Patro>3</column>
+            <Typ>CV</column>
+            <KmenovaTrida>None</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">20</column>
+            <Nazev>Uč 20</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>None</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">21</column>
+            <Nazev>Uč 21</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>A4</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">22</column>
+            <Nazev>Uč 22</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>E4</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">23</column>
+            <Nazev>Uč 23</column>
+            <Patro>4</column>
+            <Typ>CV</column>
+            <KmenovaTrida>C4a</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">24</column>
+            <Nazev>Uč 24</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C4b</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">25</column>
+            <Nazev>Uč 25</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C4c</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">26</column>
+            <Nazev>Uč 26</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>E3</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">27</column>
+            <Nazev>Uč 27</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C3b</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">28</column>
+            <Nazev>Uč 28</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>C3c</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">29</column>
+            <Nazev>Uč 29</column>
+            <Patro>4</column>
+            <Typ>TE</column>
+            <KmenovaTrida>None</column>
+        <Ucebna>
+        <Ucebna>
+            <column name="id">30</column>
+            <Nazev>TV</column>
+            <Patro>0</column>
+            <Typ>CV</column>
+            <KmenovaTrida>None</column>
+        <Ucebna>
+</ArrayOfUcebna>
