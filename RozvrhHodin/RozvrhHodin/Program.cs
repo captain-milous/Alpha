@@ -17,7 +17,7 @@ namespace RozvrhHodin
             Den test = new Den();/*
             Den test2 = new Den(Dny.Pondeli);
             Den test3 = new Den(Dny.Ctvrtek);*/
-
+            /*
             Rozvrh r1 = new Rozvrh();
             Predmet pr1 = new Predmet();
             Predmet pr2 = new Predmet("Test", "T", TypVyuky.Teorie, 0);
@@ -31,11 +31,13 @@ namespace RozvrhHodin
 
             Ucebna u = new Ucebna("24", 4, "C4b", TypVyuky.Teorie, p);
             List<Ucebna> ucebny = new List<Ucebna>();
-            ucebny.Add(u);
+            ucebny.Add(u);*/
 
-            XMLexport.ExportUcebna(ucebny, "C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\export.xml");
+            List<Ucebna> ucebny = XMLimport.ImportUcebna("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucebna\\import.xml");
 
-            Console.WriteLine(r1);
+            XMLexport.ExportUcebna(ucebny, "C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucebna\\import.xml");
+
+            //Console.WriteLine(r1);
             Console.WriteLine();/*
             Console.WriteLine(test2);
             Console.WriteLine(test3);*/
