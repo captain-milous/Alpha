@@ -24,17 +24,12 @@ namespace RozvrhHodin
             Console.WriteLine();
 
 
-            List<Ucitel> ucitele = new List<Ucitel>();
-
-            ucitele.Add(new Ucitel());
-            ucitele.Add(new Ucitel());
 
 
-            // List<Predmet> predmety = XMLimport.ImportPredmet("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Predmet\\import.xml");
-            // List<Ucebna> ucebny = XMLimport.ImportUcebna("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucebna\\import.xml");
-            // List<Ucitel> ucitele = XMLimport.ImportUcitel("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucitel\\import.xml");
+            List<Predmet> predmety = XMLimport.ImportPredmety();
+            List<Ucebna> ucebny = XMLimport.ImportUcebny();
+            List<Ucitel> ucitele = XMLimport.ImportUcitele();
 
-            XMLexport.ExportUcitel(ucitele, "C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucitel\\import.xml");
 
             /*
              * Fungování aplikace
