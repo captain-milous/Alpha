@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUcitel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ucitel>
+    <CeleJmeno>Bez jména</CeleJmeno>
+    <Zkratka>xx</Zkratka>
+    <TridniUcitel />
+    <VyucovanePredmety />
+  </Ucitel>
+  <Ucitel>
+    <CeleJmeno>Bez jména</CeleJmeno>
+    <Zkratka>xx</Zkratka>
+    <TridniUcitel />
+    <VyucovanePredmety />
+  </Ucitel>
+</ArrayOfUcitel>

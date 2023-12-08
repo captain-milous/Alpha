@@ -34,6 +34,7 @@ namespace RozvrhHodin
             // List<Ucebna> ucebny = XMLimport.ImportUcebna("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucebna\\import.xml");
             // List<Ucitel> ucitele = XMLimport.ImportUcitel("C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucitel\\import.xml");
 
+            XMLexport.ExportUcitel(ucitele, "C:\\Users\\milda\\source\\repos\\Alpha\\Alpha\\Data\\Ucitel\\import.xml");
 
             /*
              * Fungování aplikace

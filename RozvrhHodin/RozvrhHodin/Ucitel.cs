@@ -58,7 +58,7 @@ namespace RozvrhHodin
         public Ucitel()
         {
             CeleJmeno = "Bez jména";
-            Zkratka = "N/A";
+            Zkratka = "xx";
             TridniUcitel = string.Empty;
             VyucovanePredmety = new List<Predmet>();
         }
