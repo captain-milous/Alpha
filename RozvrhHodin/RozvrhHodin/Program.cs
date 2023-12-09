@@ -30,6 +30,11 @@ namespace RozvrhHodin
             List<Ucebna> ucebny = XMLimport.ImportUcebny();
             List<Ucitel> ucitele = XMLimport.ImportUcitele();
 
+            XMLexport.ExportPredmety(predmety, "Test.xml");
+            XMLexport.ExportPredmety(predmety, "Test");
+            XMLexport.ExportPredmety(predmety, "Test.xml");
+            XMLexport.ExportPredmety(predmety, "Test.xlm");
+
 
             /*
              * Fungování aplikace

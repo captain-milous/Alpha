@@ -10,15 +10,30 @@ namespace RozvrhHodin
 {
     public class XMLexport
     {
+        private static string path = "data\\";
         /// <summary>
         /// Exportuje seznam předmětů do XML souboru.
         /// </summary>
         /// <param name="dataList">Seznam předmětů k exportu.</param>
-        /// <param name="fileName">Cesta k výslednému XML souboru.</param>
-        public static void ExportPredmet(List<Predmet> dataList, string fileName)
+        /// <param name="fileName">název XML souboru.</param>
+        public static void ExportPredmety(List<Predmet> dataList, string fileName)
         {
+            if (!fileName.EndsWith(".xml"))
+            {
+                fileName += ".xml";
+            }
+
+            string fullPath = Path.Combine(path, "predmety\\", fileName);
+            Console.WriteLine(fullPath);
+            int count = 1;
+            while (File.Exists(fullPath))
+            {
+                fileName = $"{Path.GetFileNameWithoutExtension(fileName)} ({count}).xml";
+                fullPath = Path.Combine(path, "predmety\\", fileName);
+                count++;
+            }
             XmlSerializer serializer = new XmlSerializer(typeof(List<Predmet>));
-            using (StreamWriter streamWriter = new StreamWriter(fileName))
+            using (StreamWriter streamWriter = new StreamWriter(fullPath))
             {
                 serializer.Serialize(streamWriter, dataList);
             }
@@ -36,6 +51,7 @@ namespace RozvrhHodin
             {
                 serializer.Serialize(streamWriter, dataList);
             }
+            path = "data\\";
         }
 
         /// <summary>
@@ -50,6 +66,7 @@ namespace RozvrhHodin
             {
                 serializer.Serialize(streamWriter, dataList);
             }
+            path = "data\\";
         }
     }
 

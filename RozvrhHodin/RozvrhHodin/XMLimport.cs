@@ -10,14 +10,14 @@ namespace RozvrhHodin
 {
     public class XMLimport
     {
-        private static string path = "data\\";
+        private static string path;
         /// <summary>
         /// Importuje seznam předmětů ze zadaného XML souboru.
         /// </summary>
         /// <returns>Seznam předmětů načtený ze souboru.</returns>
         public static List<Predmet> ImportPredmety()
         {
-            path = path +"predmety\\import.xml"; 
+            path = "data\\predmety\\import.xml"; 
             XmlSerializer serializer = new XmlSerializer(typeof(List<Predmet>));
             using (StreamReader streamReader = new StreamReader(path))
             {
@@ -31,7 +31,7 @@ namespace RozvrhHodin
         /// <returns>Seznam učitelů načtený ze souboru.</returns>
         public static List<Ucitel> ImportUcitele()
         {
-            path = path + "ucitele\\import.xml";
+            path = "data\\ucitele\\import.xml";
             XmlSerializer serializer = new XmlSerializer(typeof(List<Ucitel>));
             using (StreamReader streamReader = new StreamReader(path))
             {
@@ -45,7 +45,7 @@ namespace RozvrhHodin
         /// <returns>Seznam učeben načtený ze souboru.</returns>
         public static List<Ucebna> ImportUcebny()
         {
-            path = path + "ucebny\\import.xml";
+            path = "data\\ucebny\\import.xml";
             XmlSerializer serializer = new XmlSerializer(typeof(List<Ucebna>));
             using (StreamReader streamReader = new StreamReader(path))
             {
