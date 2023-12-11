@@ -10,16 +10,16 @@ namespace RozvrhHodin
 {
     public class XMLimport
     {
-        private static string path;
+        private static string path = "data\\";
         /// <summary>
         /// Importuje seznam předmětů ze zadaného XML souboru.
         /// </summary>
         /// <returns>Seznam předmětů načtený ze souboru.</returns>
         public static List<Predmet> ImportPredmety()
         {
-            path = "data\\predmety\\import.xml"; 
+            string fullPath = Path.Combine(path, "predmety\\import.xml");
             XmlSerializer serializer = new XmlSerializer(typeof(List<Predmet>));
-            using (StreamReader streamReader = new StreamReader(path))
+            using (StreamReader streamReader = new StreamReader(fullPath))
             {
                 return (List<Predmet>)serializer.Deserialize(streamReader);
             }
@@ -31,9 +31,9 @@ namespace RozvrhHodin
         /// <returns>Seznam učitelů načtený ze souboru.</returns>
         public static List<Ucitel> ImportUcitele()
         {
-            path = "data\\ucitele\\import.xml";
+            string fullPath = Path.Combine(path, "ucitele\\import.xml");
             XmlSerializer serializer = new XmlSerializer(typeof(List<Ucitel>));
-            using (StreamReader streamReader = new StreamReader(path))
+            using (StreamReader streamReader = new StreamReader(fullPath))
             {
                 return (List<Ucitel>)serializer.Deserialize(streamReader);
             }
@@ -45,9 +45,9 @@ namespace RozvrhHodin
         /// <returns>Seznam učeben načtený ze souboru.</returns>
         public static List<Ucebna> ImportUcebny()
         {
-            path = "data\\ucebny\\import.xml";
+            string fullPath = Path.Combine(path, "ucebny\\import.xml");
             XmlSerializer serializer = new XmlSerializer(typeof(List<Ucebna>));
-            using (StreamReader streamReader = new StreamReader(path))
+            using (StreamReader streamReader = new StreamReader(fullPath))
             {
                 return (List<Ucebna>)serializer.Deserialize(streamReader);
             }
