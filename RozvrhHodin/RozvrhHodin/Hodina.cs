@@ -18,6 +18,9 @@ namespace RozvrhHodin
         private Ucebna ucebna;
         private Ucitel ucitel;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Volna { get { return volna; } set {  volna = value; } }
         /// <summary>
         /// Reprezentuje předmět, který může být přiřazen do hodiny. 
@@ -107,6 +110,9 @@ namespace RozvrhHodin
 
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public Ucitel Ucitel {
             get
             {
@@ -133,6 +139,10 @@ namespace RozvrhHodin
             }
         }
         #endregion
+        #region Konstruktory
+        /// <summary>
+        /// 
+        /// </summary>
         public Hodina()
         {
             Volna = true;
@@ -140,7 +150,10 @@ namespace RozvrhHodin
             Ucebna = new Ucebna();
             Ucitel = new Ucitel();  
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="predmet"></param>
         public Hodina(Predmet predmet)
         {
             Volna = false;
@@ -148,7 +161,12 @@ namespace RozvrhHodin
             Ucebna = null;
             Ucitel = null;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="predmet"></param>
+        /// <param name="ucebna"></param>
+        /// <param name="ucitel"></param>
         public Hodina(Predmet predmet, Ucebna ucebna, Ucitel ucitel)
         {
             Volna = false;
@@ -156,7 +174,12 @@ namespace RozvrhHodin
             Ucebna = ucebna;
             Ucitel = ucitel;
         }
-
+        #endregion
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public override string ToString()
         {
             if(Volna)
@@ -193,7 +216,10 @@ namespace RozvrhHodin
                 return zkratka;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string ZkratkaHodiny()
         {
             return Predmet.Zkratka;
