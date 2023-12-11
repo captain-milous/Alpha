@@ -59,6 +59,14 @@ namespace RozvrhHodin
             Tyden = VytvorNahodnyRozvrh(MetodyXML.ImportPredmety(), MetodyXML.ImportUcebny(), MetodyXML.ImportUcitele());
         }
 
+        public Rozvrh(string nazev, string trida, List<Predmet> predmety, List<Ucebna> ucebny, List<Ucitel> ucitele)
+        {
+            Nazev = nazev;
+            Trida = trida;
+            Hodnoceni = 100;
+            Tyden = VytvorNahodnyRozvrh(predmety, ucebny, ucitele);
+        }
+
         private List<Den> VytvorPrazdnyTyden()
         {
             lock (this)
@@ -86,7 +94,6 @@ namespace RozvrhHodin
                         rawRozvrh.Add(new Hodina(predmety[i]));
                     }
                 }
-                Console.WriteLine(rawRozvrh.Count);
                 if(rawRozvrh.Count < 50) 
                 { 
                     for(int i = rawRozvrh.Count; i < 50; i++)
@@ -98,7 +105,7 @@ namespace RozvrhHodin
                 {
                     throw new Exception("Moc hodin na jeden týden");
                 }
-                Console.WriteLine(rawRozvrh.Count);
+                rawRozvrh = Metody.PromichejList(rawRozvrh);
 
                 int hodina = 0;
                 for(int i = 0;i < 5; i++)

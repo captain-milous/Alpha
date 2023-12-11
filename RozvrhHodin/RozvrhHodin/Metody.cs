@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RozvrhHodin
 {
-    public static class MojeMetody
+    public static class Metody
     {
         /// <summary>
         /// Vygenerovano
@@ -30,6 +30,11 @@ namespace RozvrhHodin
             }
 
             return randomOrderList;
+        }
+
+        public static string DecimalToHexadecimal(int decimalNumber)
+        {
+            return Convert.ToString(decimalNumber, 16).ToUpper();
         }
     }
     

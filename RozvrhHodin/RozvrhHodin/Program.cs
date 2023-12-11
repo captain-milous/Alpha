@@ -14,13 +14,13 @@ namespace RozvrhHodin
         [STAThread]
         static void Main()
         {
-            
+
             /*
             Rozvrh r1 = new Rozvrh();
             Predmet pr1 = new Predmet();
             Predmet pr2 = new Predmet("Test", "T", TypVyuky.Teorie, 0);
             */
-            
+
             Console.WriteLine();
 
 
@@ -28,6 +28,9 @@ namespace RozvrhHodin
 
             Rozvrh test = new Rozvrh("test", "C4b");
             Console.WriteLine(test.ToString());
+
+            
+            
 
 
             /*
