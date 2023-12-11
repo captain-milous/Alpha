@@ -56,7 +56,7 @@ namespace RozvrhHodin
             Nazev = nazev;
             Trida = trida;
             Hodnoceni = 100;
-            Tyden = VytvorNahodnyRozvrh(XMLimport.ImportPredmety(), XMLimport.ImportUcebny(), XMLimport.ImportUcitele());
+            Tyden = VytvorNahodnyRozvrh(MetodyXML.ImportPredmety(), MetodyXML.ImportUcebny(), MetodyXML.ImportUcitele());
         }
 
         private List<Den> VytvorPrazdnyTyden()
