@@ -15,7 +15,7 @@ namespace RozvrhHodin
         /// Exportuje seznam předmětů do XML souboru.
         /// </summary>
         /// <param name="dataList">Seznam předmětů k exportu.</param>
-        /// <param name="fileName">název XML souboru.</param>
+        /// <param name="fileName">Název XML souboru.</param>
         public static void ExportPredmety(List<Predmet> dataList, string fileName)
         {
             if (!fileName.EndsWith(".xml"))
@@ -24,7 +24,6 @@ namespace RozvrhHodin
             }
 
             string fullPath = Path.Combine(path, "predmety\\", fileName);
-            Console.WriteLine(fullPath);
             int count = 1;
             while (File.Exists(fullPath))
             {
@@ -43,30 +42,54 @@ namespace RozvrhHodin
         /// Exportuje seznam učitelů do XML souboru.
         /// </summary>
         /// <param name="dataList">Seznam učitelů k exportu.</param>
-        /// <param name="fileName">Cesta k výslednému XML souboru.</param>
+        /// <param name="fileName">Název XML souboru.</param>
         public static void ExportUcitel(List<Ucitel> dataList, string fileName)
         {
+            if (!fileName.EndsWith(".xml"))
+            {
+                fileName += ".xml";
+            }
+
+            string fullPath = Path.Combine(path, "ucitele\\", fileName);
+            int count = 1;
+            while (File.Exists(fullPath))
+            {
+                fileName = $"{Path.GetFileNameWithoutExtension(fileName)} ({count}).xml";
+                fullPath = Path.Combine(path, "ucitele\\", fileName);
+                count++;
+            }
             XmlSerializer serializer = new XmlSerializer(typeof(List<Ucitel>));
-            using (StreamWriter streamWriter = new StreamWriter(fileName))
+            using (StreamWriter streamWriter = new StreamWriter(fullPath))
             {
                 serializer.Serialize(streamWriter, dataList);
             }
-            path = "data\\";
         }
 
         /// <summary>
         /// Exportuje seznam učeben do XML souboru.
         /// </summary>
         /// <param name="dataList">Seznam učeben k exportu.</param>
-        /// <param name="fileName">Cesta k výslednému XML souboru.</param>
+        /// <param name="fileName">Název XML souboru.</param>
         public static void ExportUcebna(List<Ucebna> dataList, string fileName)
         {
+            if (!fileName.EndsWith(".xml"))
+            {
+                fileName += ".xml";
+            }
+
+            string fullPath = Path.Combine(path, "ucebny\\", fileName);
+            int count = 1;
+            while (File.Exists(fullPath))
+            {
+                fileName = $"{Path.GetFileNameWithoutExtension(fileName)} ({count}).xml";
+                fullPath = Path.Combine(path, "ucebny\\", fileName);
+                count++;
+            }
             XmlSerializer serializer = new XmlSerializer(typeof(List<Ucebna>));
-            using (StreamWriter streamWriter = new StreamWriter(fileName))
+            using (StreamWriter streamWriter = new StreamWriter(fullPath))
             {
                 serializer.Serialize(streamWriter, dataList);
             }
-            path = "data\\";
         }
     }
 
