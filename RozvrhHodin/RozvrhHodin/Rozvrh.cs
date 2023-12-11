@@ -11,7 +11,7 @@ namespace RozvrhHodin
     /// </summary>
     public class Rozvrh
     {
-        private object lockObject = new object();
+        private object lockRozvrh = new object();
 
         private string nazev;
         private string trida;
@@ -46,24 +46,47 @@ namespace RozvrhHodin
         {
             Nazev = nazev;
             Trida = trida;
-            Tyden = VytvorTyden();
+            Tyden = VytvorPrazdnyTyden();
             Hodnoceni = 100;
         }
 
-        private List<Den> VytvorTyden()
+        public Rozvrh(string nazev, string trida, bool nahoda)
         {
-            List<Den> output = new List<Den>();
-            for (int i = 1; i <= 5; i++)
+            Nazev = nazev;
+            Trida = trida;
+            Hodnoceni = 100;
+            if (nahoda)
             {
-                output.Add(new Den(i));
+
             }
-            return output;
+        }
+
+        private List<Den> VytvorPrazdnyTyden()
+        {
+            lock (this)
+            {
+                List<Den> output = new List<Den>();
+                for (int i = 1; i <= 5; i++)
+                {
+                    output.Add(new Den(i));
+                }
+                return output;
+            }          
         }
         private List<Den> VytvorTydenOriginal()
         {
-            List<Den> output = VytvorTyden();
+            List<Den> output = VytvorPrazdnyTyden();
 
             return output;
+        }
+
+        public void VytvorNahodnyRozvrh(List<Predmet> predmety)
+        {
+            lock (lockRozvrh)
+            {
+
+            }
+
         }
 
         public override string ToString()
@@ -83,7 +106,7 @@ namespace RozvrhHodin
         /// <param name="points"></param>
         public void Ohodnotit(int points)
         {
-            lock (lockObject)
+            lock (lockRozvrh)
             {
                 Hodnoceni += points;
             }
@@ -96,16 +119,13 @@ namespace RozvrhHodin
         /// <param name="novaHodina"></param>
         public void SetHodina(int den, int hodina, Hodina novaHodina)
         {
-            lock (lockObject)
+            if(!(den > 0 && den < 6))
             {
-                if (den > 0 && den < 6)
-                {
-                    Tyden[den - 1].SetHodina(hodina, novaHodina);
-                }
-                else
-                {
-                    throw new Exception("Den musí být v rozmezí 1 - 5");
-                }
+                throw new Exception("Den musí být v rozmezí 1 - 5");
+            }
+            lock (lockRozvrh)
+            {
+                Tyden[den - 1].SetHodina(hodina, novaHodina);             
             }
         }
         /// <summary>
@@ -116,16 +136,13 @@ namespace RozvrhHodin
         /// <returns></returns>
         public Hodina GetHodina(int den, int hodina)
         {
-            lock (lockObject)
+            if (den > 0 && den < 6)
             {
-                if(den > 0 && den < 6)
-                {
-                    return Tyden[den - 1].GetHodina(hodina);
-                }
-                else
-                {
-                    throw new Exception("Den musí být v rozmezí 1 - 5");
-                }             
+                throw new Exception("Den musí být v rozmezí 1 - 5");
+            }
+            lock (lockRozvrh)
+            {
+                return Tyden[den - 1].GetHodina(hodina);            
             }
         }
 

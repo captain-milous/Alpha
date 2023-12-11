@@ -188,7 +188,7 @@ namespace RozvrhHodin
             }
             else
             {
-                string zkratka = ZkratkaHodiny();
+                string zkratka = GetZkratkaPredmetu();
                 if(zkratka.Length < 4)
                 {
                     switch(zkratka.Length)
@@ -220,9 +220,92 @@ namespace RozvrhHodin
         /// 
         /// </summary>
         /// <returns></returns>
-        public string ZkratkaHodiny()
+        public string GetNazevPredmetu()
+        {
+            return Predmet.Nazev;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public string GetZkratkaPredmetu()
         {
             return Predmet.Zkratka;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public TypVyuky GetTypPredmetu()
+        {
+            return Predmet.Typ;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int GetPocetHodinPredmetu() 
+        {
+            return Predmet.HodinTydne;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public TypVyuky GetTypUcebny()
+        {
+            return Ucebna.Typ;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int GetPatroUcebny()
+        {
+            return Ucebna.Patro;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public string GetNazevUcebny()
+        {
+            return Ucebna.Nazev;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public string GetKmenTridaUcebny()
+        {
+            return Ucebna.KmenovaTrida;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public List<Predmet> GetVyucPredmetyUcebny()
+        {
+            return Ucebna.VyucovanePredmety;
+        }
+
+        public string GetJmenoUcitele()
+        {
+            return Ucitel.CeleJmeno;
+        }
+        public string GetZkratkaUcitele()
+        {
+            return Ucitel.Zkratka;
+        }
+        public string GetTridaUcitele()
+        {
+            return Ucitel.TridniUcitel;
+        }
+        public List<Predmet> GetVyucPredmetyUcitele()
+        {
+            return Ucitel.VyucovanePredmety;
+        }
+
     }
 }
