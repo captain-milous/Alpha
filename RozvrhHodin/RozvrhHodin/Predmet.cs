@@ -31,18 +31,8 @@ namespace RozvrhHodin
         }
         public string Zkratka 
         { 
-            get { return zkratka; } 
-            set 
-            {
-                if (!string.IsNullOrWhiteSpace(value))
-                {
-                    zkratka = value;
-                }
-                else
-                {
-                    throw new Exception("Zkratka nesmí být prázdná");
-                }
-            } 
+            get { return zkratka; }
+            set { zkratka = value; }
         }
         public TypVyuky Typ { get; set; }
         public int HodinTydne 
@@ -67,8 +57,8 @@ namespace RozvrhHodin
         /// </summary>
         public Predmet()
         {
-            Nazev = "Bez názvu";
-            Zkratka = "N/A";
+            Nazev = "Volna";
+            Zkratka = " ";
             Typ = TypVyuky.Teorie;
             HodinTydne = 0;
         }

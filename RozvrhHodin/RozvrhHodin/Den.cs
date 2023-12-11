@@ -90,7 +90,7 @@ namespace RozvrhHodin
             string output = "| " + Zkratka;
             for(int i = 0; i < rozvrhDne.Count; i++)
             {
-                output = output + " | " + RozvrhDne[i].Predmet.Zkratka;
+                output = output + " | " + RozvrhDne[i].ToString();
             }
             int zbytek = 10 - rozvrhDne.Count;
             for (int i = 0; i < zbytek; i++)
@@ -126,11 +126,23 @@ namespace RozvrhHodin
         {
             if (hodina > 0 && hodina <= 10)
             {
-                rozvrhDne[hodina - 1] = novaHodina;
+                RozvrhDne[hodina - 1] = novaHodina;
             }
             else
             {
                 throw new Exception("Hodina musí být v rozsahu 1 - 10");
+            }
+        }
+
+        public void AddHodina(Hodina hodina)
+        {
+            if(RozvrhDne.Count <= 10)
+            {
+                RozvrhDne.Add(hodina);
+            } 
+            else 
+            {
+                throw new Exception("Počet Hodin denně může být maximálně 10");
             }
         }
 

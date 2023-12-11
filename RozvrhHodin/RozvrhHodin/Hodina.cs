@@ -43,21 +43,7 @@ namespace RozvrhHodin
             {
                 if (!Volna)
                 {
-                    if(Ucebna != null) 
-                    { 
-                        if(Ucebna.Typ == value.Typ)
-                        {
-                            predmet = value;
-                        }
-                        else
-                        {
-                            throw new Exception("Předmět není určný pro tento typ učebny.");
-                        }
-                    }
-                    else
-                    {
-                        predmet = value;
-                    }
+                    predmet = value;
                 } 
                 else
                 {
@@ -87,21 +73,7 @@ namespace RozvrhHodin
             {
                 if (!Volna)
                 {
-                    if (Predmet != null)
-                    {
-                        if (Predmet.Typ == value.Typ)
-                        {
-                            ucebna = value;
-                        }
-                        else
-                        {
-                            throw new Exception("Učebna není určná pro tento typ výuky.");
-                        }
-                    }
-                    else
-                    {
-                        ucebna = value;
-                    }
+                    ucebna = value;
                 }
                 else
                 {
@@ -188,22 +160,19 @@ namespace RozvrhHodin
             }
             else
             {
-                string zkratka = GetZkratkaPredmetu();
-                if(zkratka.Length < 4)
+                string zkr = GetZkratkaPredmetu();
+                if(zkr.Length < 3)
                 {
-                    switch(zkratka.Length)
+                    switch(zkr.Length)
                     {
                         case 0:
-                            zkratka = "   ";
+                            zkr = "   ";
                             break;
                         case 1:
-                            zkratka = " " + zkratka + " ";
+                            zkr = " " + zkr + " ";
                             break;
                         case 2:
-                            zkratka = zkratka + " ";
-                            break;
-                        case 3:
-                            zkratka = zkratka;
+                            zkr = " " + zkr;
                             break;
                         default:
                             throw new Exception("Tento případ by neměl nastat");
@@ -211,9 +180,9 @@ namespace RozvrhHodin
                 }
                 else
                 {
-                    zkratka = new string(zkratka.Take(3).ToArray());
+                    zkr = new string(zkr.Take(3).ToArray());
                 }
-                return zkratka;
+                return zkr;
             }
         }
         /// <summary>
@@ -230,7 +199,14 @@ namespace RozvrhHodin
         /// <returns></returns>
         public string GetZkratkaPredmetu()
         {
-            return Predmet.Zkratka;
+            if (Predmet == null)
+            {
+                return string.Empty;
+            }
+            else
+            {
+                return Predmet.Zkratka;
+            }
         }
         /// <summary>
         /// 

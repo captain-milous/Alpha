@@ -37,28 +37,26 @@ namespace RozvrhHodin
 
         public Rozvrh()
         {
-            Nazev = "Originál";
+            Nazev = "Prázdný";
             Trida = "C4b";
-            Tyden = VytvorTydenOriginal();
+            Tyden = VytvorPrazdnyTyden();
             Hodnoceni = 100;
         }
+        /*
         public Rozvrh(string nazev, string trida)
         {
             Nazev = nazev;
             Trida = trida;
             Tyden = VytvorPrazdnyTyden();
             Hodnoceni = 100;
-        }
+        }*/
 
-        public Rozvrh(string nazev, string trida, bool nahoda)
+        public Rozvrh(string nazev, string trida)
         {
             Nazev = nazev;
             Trida = trida;
             Hodnoceni = 100;
-            if (nahoda)
-            {
-
-            }
+            Tyden = VytvorNahodnyRozvrh(XMLimport.ImportPredmety(), XMLimport.ImportUcebny(), XMLimport.ImportUcitele());
         }
 
         private List<Den> VytvorPrazdnyTyden()
@@ -73,20 +71,47 @@ namespace RozvrhHodin
                 return output;
             }          
         }
-        private List<Den> VytvorTydenOriginal()
-        {
-            List<Den> output = VytvorPrazdnyTyden();
 
-            return output;
-        }
-
-        public void VytvorNahodnyRozvrh(List<Predmet> predmety)
+        public List<Den> VytvorNahodnyRozvrh(List<Predmet> predmety, List<Ucebna> ucebny, List<Ucitel> ucitele)
         {
             lock (lockRozvrh)
             {
+                List<Den> output = VytvorPrazdnyTyden();
+                List<Hodina> rawRozvrh = new List<Hodina>();
+                for (int i = 0; i < predmety.Count;i++)
+                {
+                    int maxHodin = predmety[i].HodinTydne;
+                    for (int j = 0; j < maxHodin; j++)
+                    {
+                        rawRozvrh.Add(new Hodina(predmety[i]));
+                    }
+                }
+                Console.WriteLine(rawRozvrh.Count);
+                if(rawRozvrh.Count < 50) 
+                { 
+                    for(int i = rawRozvrh.Count; i < 50; i++)
+                    {
+                        rawRozvrh.Add(new Hodina());
+                    }
+                }
+                else
+                {
+                    throw new Exception("Moc hodin na jeden týden");
+                }
+                Console.WriteLine(rawRozvrh.Count);
 
+                int hodina = 0;
+                for(int i = 0;i < 5; i++)
+                {
+                    for (int j = 1; j <= 10; j++)
+                    {
+                        output[i].AddHodina(rawRozvrh[hodina]);
+                        hodina++;
+                    }
+                }
+
+                return output;
             }
-
         }
 
         public override string ToString()

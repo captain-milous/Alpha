@@ -26,14 +26,8 @@ namespace RozvrhHodin
 
 
 
-            List<Predmet> predmety = XMLimport.ImportPredmety();
-            List<Ucebna> ucebny = XMLimport.ImportUcebny();
-            List<Ucitel> ucitele = XMLimport.ImportUcitele();
-
-            XMLexport.ExportPredmety(predmety, "Test.xml");
-            XMLexport.ExportPredmety(predmety, "Test");
-            XMLexport.ExportPredmety(predmety, "Test.xml");
-            XMLexport.ExportPredmety(predmety, "Test.xlm");
+            Rozvrh test = new Rozvrh("test", "C4b");
+            Console.WriteLine(test.ToString());
 
 
             /*
