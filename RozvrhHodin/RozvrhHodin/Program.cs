@@ -10,16 +10,16 @@ namespace RozvrhHodin
     public static class Program
     {
         //static List<Rozvrh> threadSafeList = new List<Rozvrh>();
-        static int totalObjectsCreated = 0;
-        static int threadCount = 10;
-        static int timeLimitInSeconds = 120; // Čas v sekundách, po kterém se mají vypnout všechna vlákna
+        public static int totalObjectsCreated = 0;
+        public static int threadCount = 10;
+        public static int timeLimitInSeconds = 120;
 
-        static object lockObject = new object();
-        static bool stopThreads = false;
+        public static object lockObject = new object();
+        public static bool stopThreads = false;
 
-        static List<Predmet> predmety = MetodyXML.ImportPredmety();
-        static List<Ucebna> ucebny = MetodyXML.ImportUcebny();
-        static List<Ucitel> ucitele = MetodyXML.ImportUcitele();
+        public static List<Predmet> predmety = MetodyXML.ImportPredmety();
+        public static List<Ucebna> ucebny = MetodyXML.ImportUcebny();
+        public static List<Ucitel> ucitele = MetodyXML.ImportUcitele();
 
         /// <summary>
         /// The main entry point for the application.
@@ -31,6 +31,7 @@ namespace RozvrhHodin
             // Vytvoření vlákna pro sledování času
             Thread timeThread = new Thread(TimeThread);
             timeThread.Start();
+
 
             // Vytvoření a spuštění 10 vláken
             Thread[] threads = new Thread[threadCount];
@@ -46,6 +47,7 @@ namespace RozvrhHodin
                 thread.Join();
             }
 
+
             // Zastav vlákno pro sledování času
             stopThreads = true;
             timeThread.Join();
@@ -53,13 +55,6 @@ namespace RozvrhHodin
             Console.WriteLine($"Celkový počet vytvořených objektů: {totalObjectsCreated}");
 
 
-
-            /*
-             * Fungování aplikace
-             * 
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());*/
         }
 
         static void CreateObjectThread()
