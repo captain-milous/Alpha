@@ -27,6 +27,11 @@ namespace RozvrhHodin
         [STAThread]
         static void Main()
         {
+            bool run = true;
+            while (run)
+            {
+
+            }
 
             // Vytvoření vlákna pro sledování času
             Thread timeThread = new Thread(TimeThread);
