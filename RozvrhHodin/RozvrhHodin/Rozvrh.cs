@@ -50,7 +50,6 @@ namespace RozvrhHodin
             Tyden = VytvorPrazdnyTyden();
             Hodnoceni = 100;
         }*/
-
         public Rozvrh(string nazev, string trida)
         {
             Nazev = nazev;
@@ -58,7 +57,14 @@ namespace RozvrhHodin
             Hodnoceni = 100;
             Tyden = VytvorNahodnyRozvrh(MetodyXML.ImportPredmety(), MetodyXML.ImportUcebny(), MetodyXML.ImportUcitele());
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nazev"></param>
+        /// <param name="trida"></param>
+        /// <param name="predmety"></param>
+        /// <param name="ucebny"></param>
+        /// <param name="ucitele"></param>
         public Rozvrh(string nazev, string trida, List<Predmet> predmety, List<Ucebna> ucebny, List<Ucitel> ucitele)
         {
             Nazev = nazev;
@@ -66,7 +72,10 @@ namespace RozvrhHodin
             Hodnoceni = 100;
             Tyden = VytvorNahodnyRozvrh(predmety, ucebny, ucitele);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         private List<Den> VytvorPrazdnyTyden()
         {
             lock (this)
@@ -79,7 +88,14 @@ namespace RozvrhHodin
                 return output;
             }          
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="predmety"></param>
+        /// <param name="ucebny"></param>
+        /// <param name="ucitele"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public List<Den> VytvorNahodnyRozvrh(List<Predmet> predmety, List<Ucebna> ucebny, List<Ucitel> ucitele)
         {
             lock (lockRozvrh)
@@ -120,7 +136,10 @@ namespace RozvrhHodin
                 return output;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             string output = "    Rozvrh " + Nazev + " pro třídu " + Trida + ":\n";

@@ -9,32 +9,41 @@ namespace RozvrhHodin
     public static class Metody
     {
         /// <summary>
-        /// Vygenerovano
+        /// Tato metoda byla vygenerována umělou inteligencí
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="input"></param>
         /// <returns></returns>
         public static List<T> PromichejList<T>(List<T> input)
         {
-            List<T> randomOrderList = new List<T>(input);
-            Random random = new Random();
+            List<T> rdmOrderList = new List<T>(input);
+            Random rdm = new Random();
 
-            int n = randomOrderList.Count;
+            int n = rdmOrderList.Count;
             while (n > 1)
             {
                 n--;
-                int k = random.Next(n + 1);
-                T value = randomOrderList[k];
-                randomOrderList[k] = randomOrderList[n];
-                randomOrderList[n] = value;
+                int k = rdm.Next(n + 1);
+                T value = rdmOrderList[k];
+                rdmOrderList[k] = rdmOrderList[n];
+                rdmOrderList[n] = value;
             }
 
-            return randomOrderList;
+            return rdmOrderList;
         }
-
-        public static string DecimalToHexadecimal(int decimalNumber)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public static string DecimalToHexadecimal(int num)
         {
-            return Convert.ToString(decimalNumber, 16).ToUpper();
+            string output = Convert.ToString(num, 16).ToUpper();
+            while(output.Length <= 6) 
+            { 
+                output = "0" + output;
+            }
+            return output;
         }
     }
     
