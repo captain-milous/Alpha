@@ -107,7 +107,8 @@ namespace RozvrhHodin
         {
             return Zkratka + " (" + Nazev + ") je " + Typ.ToString() + " a učí se " + HodinTydne + " hodin týdně.";
         }
-        #endregion
-    }
 
+        #endregion
+
+    }
 }
