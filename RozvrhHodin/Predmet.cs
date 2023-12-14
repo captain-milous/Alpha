@@ -105,7 +105,14 @@ namespace RozvrhHodin
         /// <returns>(string) Výpis předmětu</returns>
         public override string ToString()
         {
-            return Zkratka + " (" + Nazev + ") je " + Typ.ToString() + " a učí se " + HodinTydne + " hodin týdně.";
+            if(Nazev == "Volna")
+            {
+                return "Volná hodina";
+            }
+            else
+            {
+                return Zkratka + " (" + Nazev + ") je " + Typ.ToString() + " a učí se " + HodinTydne + " hodin týdně.";
+            }
         }
 
         #endregion
