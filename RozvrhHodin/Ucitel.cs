@@ -83,7 +83,7 @@ namespace RozvrhHodin
         {
             CeleJmeno = "Bez jména";
             Zkratka = "xx";
-            TridniUcitel = string.Empty;
+            TridniUcitel = "None";
             VyucovanePredmety = new List<Predmet>();
         }
 
@@ -126,7 +126,14 @@ namespace RozvrhHodin
         /// <returns>(string) Výpis učitele</returns>
         public override string ToString()
         {
-            return base.ToString();
+            if(tridniUcitel == "None")
+            {
+                return CeleJmeno + " (" +Zkratka + ")";
+            }
+            else
+            {
+                return CeleJmeno + " (" + Zkratka + ") je třídním učitelem " + tridniUcitel;
+            }
         }
 
         #endregion
