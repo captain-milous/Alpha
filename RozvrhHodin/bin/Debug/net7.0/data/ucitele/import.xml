@@ -1,165 +1,375 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfUcitel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Ucitel>
-    <CeleJmeno>Jaroslav Benda</CeleJmeno>
+    <CeleJmeno>Ing. Jaroslav Benda</CeleJmeno>
     <Zkratka>Bd</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+        <Zkratka>CIT</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Lucie Brčáková</CeleJmeno>
+    <CeleJmeno>Ing. Lucie Brčáková</CeleJmeno>
     <Zkratka>Bc</Zkratka>
     <TridniUcitel>C4c</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+        <Zkratka>PIS</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+        <Zkratka>PIS</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Jan Hehl</CeleJmeno>
+    <CeleJmeno>Mgr. Jan Hehl</CeleJmeno>
     <Zkratka>He</Zkratka>
     <TridniUcitel>C1c</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Tělesná Výchova</Nazev>
+        <Zkratka>TV</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Český jazyk a literatura</Nazev>
+        <Zkratka>C</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>3</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Simona Hemžalová</CeleJmeno>
+    <CeleJmeno>Mgr. Simona Hemžalová</CeleJmeno>
     <Zkratka>Hs</Zkratka>
     <TridniUcitel>C2b</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Anglický Jazyk</Nazev>
+        <Zkratka>A</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>4</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Tomáš Juchelka</CeleJmeno>
+    <CeleJmeno>Ing. Tomáš Juchelka</CeleJmeno>
     <Zkratka>Ju</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Anglický Jazyk</Nazev>
+        <Zkratka>A</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>4</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Filip Kallmünzer</CeleJmeno>
+    <CeleJmeno>Ing. Filip Kallmünzer</CeleJmeno>
     <Zkratka>Kl</Zkratka>
     <TridniUcitel>A2a</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Aplikovaná matematika</Nazev>
+        <Zkratka>AM</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Ivana Kantnerová</CeleJmeno>
+    <CeleJmeno>Ing. Ivana Kantnerová</CeleJmeno>
     <Zkratka>Ka</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Databázové systémy (Teorie)</Nazev>
+        <Zkratka>DS</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>1</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Databázové systémy (Cvičení)</Nazev>
+        <Zkratka>DS</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Dušan Kuchařík</CeleJmeno>
+    <CeleJmeno>Ing. Dušan Kuchařík</CeleJmeno>
     <Zkratka>Ku</Zkratka>
     <TridniUcitel>A3b</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Tělesná Výchova</Nazev>
+        <Zkratka>TV</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Pavel Lopocha</CeleJmeno>
+    <CeleJmeno>Mgr. Pavel Lopocha</CeleJmeno>
     <Zkratka>Lo</Zkratka>
     <TridniUcitel>A2b</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Tělesná Výchova</Nazev>
+        <Zkratka>TV</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Ondřej Mandík</CeleJmeno>
+    <CeleJmeno>Ing. Ondřej Mandík</CeleJmeno>
     <Zkratka>Ma</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Programové vybavení (Teorie)</Nazev>
+        <Zkratka>PV</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>1</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Programové vybavení (Cvičení)</Nazev>
+        <Zkratka>PV</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Lukáš Masopust</CeleJmeno>
+    <CeleJmeno>Ing. Lukáš Masopust</CeleJmeno>
     <Zkratka>Ms</Zkratka>
     <TridniUcitel>C3c</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+        <Zkratka>PSS</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>1</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+        <Zkratka>PSS</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
     <CeleJmeno>Jan Molič</CeleJmeno>
     <Zkratka>Mo</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+        <Zkratka>PSS</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>1</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+        <Zkratka>PSS</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Mykyta Narusevych</CeleJmeno>
+    <CeleJmeno>Mgr. Mykyta Narusevych</CeleJmeno>
     <Zkratka>Na</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Webové aplikace (Cvičení)</Nazev>
+        <Zkratka>WA</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Eva Neugebauerová</CeleJmeno>
+    <CeleJmeno>Mgr. Eva Neugebauerová</CeleJmeno>
     <Zkratka>Ng</Zkratka>
     <TridniUcitel>C4b</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety>
+      <Predmet>
+        <Nazev>Matematika</Nazev>
+        <Zkratka>M</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>4</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Vít Nohejl</CeleJmeno>
+    <CeleJmeno>Ing. Vít Nohejl</CeleJmeno>
     <Zkratka>No</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety>
+      <Predmet>
+        <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+        <Zkratka>PIS</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Technický projekt</Nazev>
+        <Zkratka>TP</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>1</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Šárka Páltiková</CeleJmeno>
+    <CeleJmeno>Ing. Bc. Šárka Páltiková</CeleJmeno>
     <Zkratka>Pa</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Anglický Jazyk</Nazev>
+        <Zkratka>A</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>4</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Jan Pavlát</CeleJmeno>
+    <CeleJmeno>Mgr. Jan Pavlát</CeleJmeno>
     <Zkratka>Pv</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Webové aplikace (Teorie)</Nazev>
+        <Zkratka>WA</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>1</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Webové aplikace (Cvičení)</Nazev>
+        <Zkratka>WA</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Luboš Rašek</CeleJmeno>
+    <CeleJmeno>RNDr. Luboš Rašek</CeleJmeno>
     <Zkratka>Rk</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Aplikovaná matematika</Nazev>
+        <Zkratka>AM</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Alenka Reichlová</CeleJmeno>
+    <CeleJmeno>Mgr. Alenka Reichlová</CeleJmeno>
     <Zkratka>Re</Zkratka>
     <TridniUcitel>C3b</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety>
+      <Predmet>
+        <Nazev>Programové vybavení (Teorie)</Nazev>
+        <Zkratka>PV</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>1</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Programové vybavení (Cvičení)</Nazev>
+        <Zkratka>PV</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Martina Mušecová</CeleJmeno>
-    <Zkratka>Mu</Zkratka>
-    <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
-  </Ucitel>
-  <Ucitel>
-    <CeleJmeno>Zbyněk Ježek</CeleJmeno>
-    <Zkratka>Jz</Zkratka>
-    <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
-  </Ucitel>
-  <Ucitel>
-    <CeleJmeno>Libuše Hrabalová</CeleJmeno>
+    <CeleJmeno>Mgr. Libuše Hrabalová</CeleJmeno>
     <Zkratka>Hr</Zkratka>
     <TridniUcitel>A1</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety>
+      <Predmet>
+        <Nazev>Matematika</Nazev>
+        <Zkratka>M</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>4</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Martin Janečka</CeleJmeno>
-    <Zkratka>Ja</Zkratka>
-    <TridniUcitel>A3a</TridniUcitel>
-    <VyucovanePredmety />
-  </Ucitel>
-  <Ucitel>
-    <CeleJmeno>Kristina Studénková</CeleJmeno>
+    <CeleJmeno>MUDr. Kristina Studénková</CeleJmeno>
     <Zkratka>Su</Zkratka>
     <TridniUcitel>C2a</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Český jazyk a literatura</Nazev>
+        <Zkratka>C</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>3</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Jan Šváb</CeleJmeno>
+    <CeleJmeno>Ing. Jan Šváb</CeleJmeno>
     <Zkratka>Sv</Zkratka>
     <TridniUcitel>C4a</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+        <Zkratka>CIT</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Vladimír Váňa</CeleJmeno>
+    <CeleJmeno>Ing. Mgr. Vladimír Váňa, CSc.</CeleJmeno>
     <Zkratka>Vd</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+        <Zkratka>CIT</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
   <Ucitel>
-    <CeleJmeno>Antonín Vobecký</CeleJmeno>
+    <CeleJmeno>Ing. Antonín Vobecký</CeleJmeno>
     <Zkratka>Vc</Zkratka>
     <TridniUcitel>None</TridniUcitel>
-    <VyucovanePredmety />
+    <VyucovanePredmety> 
+      <Predmet>
+        <Nazev>Databázové systémy (Teorie)</Nazev>
+        <Zkratka>DS</Zkratka>
+        <Typ>Teorie</Typ>
+        <HodinTydne>1</HodinTydne>
+      </Predmet>
+      <Predmet>
+        <Nazev>Databázové systémy (Cvičení)</Nazev>
+        <Zkratka>DS</Zkratka>
+        <Typ>Cviceni</Typ>
+        <HodinTydne>2</HodinTydne>
+      </Predmet>
+    </VyucovanePredmety>
   </Ucitel>
 </ArrayOfUcitel>
