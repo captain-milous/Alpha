@@ -85,7 +85,14 @@ namespace RozvrhHodin
         /// <returns>(string) Výpis učebny</returns>
         public override string ToString()
         {
-            return "Učebna " + Nazev + " je kmenovou ";
+            if(kmenovaTrida != string.Empty)
+            {
+                return "Učebna " + Nazev + " je kmenovou pro tridu " + kmenovaTrida + ", lze zde učit předměty které jsou " + Typ.ToString();
+            }
+            else 
+            {
+                return "V učebně " + Nazev + " se učí " + Typ.ToString();
+            }
         }
 
         #endregion
