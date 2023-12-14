@@ -79,7 +79,7 @@ namespace RozvrhHodin
         }
 
         #endregion
-
+        #region ToString()
         /// <summary>
         /// Převede hodinu na řetězec vhodný pro výpis v rozvrhu.
         /// </summary>
@@ -117,6 +117,8 @@ namespace RozvrhHodin
                 return zkr;
             }
         }
+        #endregion
+        #region Metody Predmetu
 
         /// <summary>
         /// Získá název předmětu spojený s touto hodinou.
@@ -124,6 +126,10 @@ namespace RozvrhHodin
         /// <returns>(string) Název předmětu</returns>
         public string GetNazevPredmetu()
         {
+            if (Predmet == null)
+            {
+                return string.Empty;
+            }
             return Predmet.Nazev;
         }
 
@@ -137,10 +143,7 @@ namespace RozvrhHodin
             {
                 return string.Empty;
             }
-            else
-            {
-                return Predmet.Zkratka;
-            }
+            return Predmet.Zkratka;
         }
 
         /// <summary>
@@ -161,12 +164,19 @@ namespace RozvrhHodin
             return Predmet.HodinTydne;
         }
 
+        #endregion
+        #region Metody Ucebny
+
         /// <summary>
         /// Získá typ učebny, ve které se hodina koná.
         /// </summary>
         /// <returns>(TypVyuky) Typ učebny</returns>
         public TypVyuky GetTypUcebny()
         {
+            if (Predmet == null)
+            {
+                return TypVyuky.Teorie;
+            }
             return Ucebna.Typ;
         }
 
@@ -176,6 +186,10 @@ namespace RozvrhHodin
         /// <returns>(int) Číslo patra učebny</returns>
         public int GetPatroUcebny()
         {
+            if (Predmet == null)
+            {
+                return 0;
+            }
             return Ucebna.Patro;
         }
 
@@ -205,6 +219,9 @@ namespace RozvrhHodin
         {
             return Ucebna.VyucovanePredmety;
         }
+
+        #endregion
+        #region Metody Ucitele
 
         /// <summary>
         /// Získá jméno učitele, který vyučuje tuto hodinu.
@@ -241,6 +258,8 @@ namespace RozvrhHodin
         {
             return Ucitel.VyucovanePredmety;
         }
-    }
 
+        #endregion
+
+    }
 }
