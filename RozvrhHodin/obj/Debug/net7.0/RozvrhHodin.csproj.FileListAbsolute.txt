@@ -1,0 +1,15 @@
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\bin\Debug\net7.0\RozvrhHodin.exe
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\bin\Debug\net7.0\RozvrhHodin.deps.json
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\bin\Debug\net7.0\RozvrhHodin.runtimeconfig.json
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\bin\Debug\net7.0\RozvrhHodin.dll
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\bin\Debug\net7.0\RozvrhHodin.pdb
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\RozvrhHodin.csproj.AssemblyReference.cache
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\RozvrhHodin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\RozvrhHodin.AssemblyInfoInputs.cache
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\RozvrhHodin.AssemblyInfo.cs
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\RozvrhHodin.csproj.CoreCompileInputs.cache
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\RozvrhHodin.dll
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\refint\RozvrhHodin.dll
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\RozvrhHodin.pdb
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\RozvrhHodin.genruntimeconfig.cache
+C:\Users\milda\source\repos\Alpha\Alpha\RozvrhHodin\obj\Debug\net7.0\ref\RozvrhHodin.dll
