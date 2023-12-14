@@ -199,6 +199,10 @@ namespace RozvrhHodin
         /// <returns>(string) Název učebny</returns>
         public string GetNazevUcebny()
         {
+            if (Ucebna == null)
+            {
+                return string.Empty;
+            }
             return Ucebna.Nazev;
         }
 
@@ -208,6 +212,10 @@ namespace RozvrhHodin
         /// <returns>(string) Název kmenové třídy učebny</returns>
         public string GetKmenTridaUcebny()
         {
+            if (Ucebna == null)
+            {
+                return string.Empty;
+            }
             return Ucebna.KmenovaTrida;
         }
 
