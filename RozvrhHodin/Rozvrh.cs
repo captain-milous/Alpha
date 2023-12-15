@@ -90,45 +90,144 @@ namespace RozvrhHodin
         /// <param name="ucitele">Seznam učitelů</param>
         /// <returns>Seznam dnů s náhodným rozvrhem</returns>
         /// <exception cref="Exception">Vyvolá výjimku, pokud je počet hodin v rozvrhu větší než 50</exception>
+        /// <remarks>
+        /// Nejduležitější metoda pro můj generátor rozvrhů.
+        /// </remarks>
         public List<Den> VytvorNahodnyRozvrh(List<Predmet> predmety, List<Ucebna> ucebny, List<Ucitel> ucitele)
         {
-            lock (lockRozvrh)
+            Random rnd = new Random();
+
+            // stage 1 - RND přiřazení učitele k předmětu (tak aby nebyli jiní učitelé na jeden předmět)
+            List<Hodina> hodinySUcitelem = new List<Hodina>();
+            foreach (Predmet predmet in predmety)
             {
-                List<Den> output = VytvorPrazdnyTyden();
-                List<Hodina> rawRozvrh = new List<Hodina>();
-                for (int i = 0; i < predmety.Count; i++)
+                Hodina hodSUc = new Hodina(predmet);
+                List<Ucitel> ucitelSPredmetem = new List<Ucitel>();
+                for (int i = 0; i < ucitele.Count; i++)
                 {
-                    int maxHodin = predmety[i].HodinTydne;
-                    for (int j = 0; j < maxHodin; j++)
+                    foreach (Predmet vp in ucitele[i].VyucovanePredmety)
                     {
-                        rawRozvrh.Add(new Hodina(predmety[i]));
+                        if(vp.Nazev == predmet.Nazev)
+                        {
+                            ucitelSPredmetem.Add(ucitele[i]);
+                        }
                     }
                 }
-                if (rawRozvrh.Count < 50)
+                if(ucitelSPredmetem.Count > 1)
                 {
-                    for (int i = rawRozvrh.Count; i < 50; i++)
-                    {
-                        rawRozvrh.Add(new Hodina());
-                    }
-                }
+                    hodSUc.Ucitel = ucitelSPredmetem[(rnd.Next(1, ucitelSPredmetem.Count)) - 1];
+                } 
+                else if(ucitelSPredmetem.Count == 1)
+                {
+                    hodSUc.Ucitel = ucitelSPredmetem[0];
+                } 
                 else
                 {
-                    throw new Exception("Moc hodin na jeden týden");
-                }
-                rawRozvrh = Metody.PromichejList(rawRozvrh);
+                    throw new Exception("V listů s učiteli chybí učitel co by učil tento předmět");
+                }                
+                hodinySUcitelem.Add(hodSUc);
+            }
 
-                int hodina = 0;
-                for (int i = 0; i < 5; i++)
+            // stage 2 - RND Přiřazení učeben pro cvičení
+            foreach(Hodina hodSUc in hodinySUcitelem)
+            {
+                if(hodSUc.Predmet.Typ == TypVyuky.Cviceni)
                 {
-                    for (int j = 1; j <= 10; j++)
+                    List<Ucebna> ucebnyPredmetu = new List<Ucebna>();
+                    for (int i = 0; i < ucebny.Count; i++)
                     {
-                        output[i].AddHodina(rawRozvrh[hodina]);
-                        hodina++;
+                        foreach(Predmet vp in ucebny[i].VyucovanePredmety)
+                        {
+                            if(vp.Nazev == hodSUc.Predmet.Nazev)
+                            {
+                                ucebnyPredmetu.Add(ucebny[i]);
+                            }
+                        }
+                    }
+                    if (ucebnyPredmetu.Count > 1)
+                    {
+                        hodSUc.Ucebna = ucebnyPredmetu[(rnd.Next(1, ucebnyPredmetu.Count)) - 1];
+                    }
+                    else if (ucebnyPredmetu.Count == 1)
+                    {
+                        hodSUc.Ucebna = ucebnyPredmetu[0];
+                    }
+                    else
+                    {
+                        throw new Exception("V listu učeben není žádná, která by dovolila učit tento předmět."); 
                     }
                 }
-
-                return output;
             }
+
+            // stage 3 - Vytvoření surového rozvrhu, s tolika Hodinami, kolik daný předmět potřebuje
+            List<Hodina> rawRozvrh = new List<Hodina>();
+            foreach(Hodina hodSUc in hodinySUcitelem)
+            {
+                int maxHodin = hodSUc.Predmet.HodinTydne;
+                for (int i = 0; i < maxHodin; i++)
+                {
+                    rawRozvrh.Add(hodSUc);
+                }
+            }
+
+            // stage 4 - RND ucebny pro teorii
+            foreach (Hodina hod in rawRozvrh)
+            {
+                if (hod.Predmet.Typ == TypVyuky.Teorie)
+                {
+                    List<Ucebna> ucebnyPredmetu = new List<Ucebna>();
+                    for (int i = 0; i < ucebny.Count; i++)
+                    {
+                        foreach (Predmet vp in ucebny[i].VyucovanePredmety)
+                        {
+                            if (vp.Nazev == hod.Predmet.Nazev)
+                            {
+                                ucebnyPredmetu.Add(ucebny[i]);
+                            }
+                        }
+                    }
+                    if (ucebnyPredmetu.Count > 1)
+                    {
+                        hod.Ucebna = ucebnyPredmetu[(rnd.Next(1, ucebnyPredmetu.Count)) - 1];
+                    }
+                    else if (ucebnyPredmetu.Count == 1)
+                    {
+                        hod.Ucebna = ucebnyPredmetu[0];
+                    }
+                    else
+                    {
+                        throw new Exception("V listu učeben není žádná, která by dovolila učit tento předmět.");
+                    }
+                }            
+            }
+
+
+            // stage 5 - Přidání volných hodin a RND promíchání 
+            if (rawRozvrh.Count < 50)
+            {
+                for (int i = rawRozvrh.Count; i < 50; i++)
+                {
+                    rawRozvrh.Add(new Hodina());
+                }
+            }
+            else
+            {
+                throw new Exception("Moc hodin na jeden týden");
+            }
+            rawRozvrh = Metody.PromichejList(rawRozvrh);
+
+            // stage 4 - Vytvoření strukturovaného rozvrhu
+            List<Den> output = VytvorPrazdnyTyden();
+            int hodina = 0;
+            foreach (Den den in output)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    den.AddHodina(rawRozvrh[hodina]);
+                    hodina++;
+                }
+            }
+            return output;
         }
 
         /// <summary>
@@ -153,14 +252,23 @@ namespace RozvrhHodin
         /// <returns></returns>
         public string PodrobnyVypis()
         {
-            string output = string.Empty;
-            for(int i = 0;i<Tyden.Count;i++)
+            string output = "Rozvrh " + Nazev + " pro třídu " + Trida + ":\nHodnocení: " + Hodnoceni + " bodů\n\n";
+            foreach (Den den in Tyden)
             {
-                output += Tyden[i].Nazev + ":\n";
-                for(int j = 0; j < Tyden[i].RozvrhDne.Count; j++)
+                output += den.Nazev + ":\n";
+                int n = 1;
+                foreach(Hodina hodina in den.RozvrhDne)
                 {
-                    int x = j + 1;
-                    output += x + ". " + Tyden[i].GetHodina(j).Predmet.ToString() + Tyden[i].GetHodina(j).Ucitel.ToString() +"\n";
+                    output += n + ". hodina:\n";
+                    if(hodina.Predmet.Nazev != "Volna")
+                    {
+                        output += hodina.Predmet.ToString() + "\n" + hodina.Ucitel.ToString() + "\n" + hodina.Ucebna.ToString() + "\n\n";
+                    }
+                    else
+                    {
+                        output += "Volná hodina\n\n";
+                    }
+                    n++;
                 }
             }
             return output;

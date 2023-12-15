@@ -39,12 +39,12 @@ namespace RozvrhHodin
         /// <summary>
         /// Získá nebo nastaví zkratku předmětu.
         /// </summary>
-        public string Zkratka { get; set; }
+        public string Zkratka { get { return zkratka; } set { zkratka = value; } }
 
         /// <summary>
         /// Získá nebo nastaví typ výuky předmětu.
         /// </summary>
-        public TypVyuky Typ { get; set; }
+        public TypVyuky Typ { get { return typ; } set { typ = value; } }
 
         /// <summary>
         /// Získá nebo nastaví počet vyučovacích hodin týdně (musí být v rozmezí 0-5 hodin).

@@ -10,7 +10,7 @@
 
         static int pocetGenRozvrhu = 0;
         static int pocetHodRozvrhu = 0;
-        static int threadCount = 10;
+        static int threadCount = 15;
         static int casovyLimit = 120;
 
         static object lockObject = new object();
@@ -154,13 +154,26 @@
                 {
                     nazev += Metody.DecimalToHexadecimal(pocetGenRozvrhu);
                 }
-                Rozvrh rozvrh = new Rozvrh(nazev, trida, predmety, ucebny, ucitele);
-
-                lock (lockObject)
+                bool rozvrhOK = true;
+                Rozvrh rozvrh = new Rozvrh();
+                try
                 {
-                    vygenerRozvrhy.Add(rozvrh);
-                    pocetGenRozvrhu++;
+                    rozvrh = new Rozvrh(nazev, trida, predmety, ucebny, ucitele);
+                } 
+                catch (Exception ex) 
+                {
+                    Console.WriteLine(ex.Message);
+                    rozvrhOK = false;
                 }
+                if (rozvrhOK) 
+                {
+                    lock (lockObject)
+                    {
+                        vygenerRozvrhy.Add(rozvrh);
+                        pocetGenRozvrhu++;
+                    }
+                }
+                
             }
         }
 
@@ -178,7 +191,8 @@
                     {
                         hodnocenyRozvrh = vygenerRozvrhy[0];
                         vygenerRozvrhy.RemoveAt(0);
-                        ohodnocRozvrhy.Add(hodnocenyRozvrh);
+                        //ohodnocRozvrhy.Add(hodnocenyRozvrh);
+                        GC.SuppressFinalize(hodnocenyRozvrh);
                         pocetHodRozvrhu++;
                     }
                 }

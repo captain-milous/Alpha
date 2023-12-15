@@ -20,17 +20,17 @@ namespace RozvrhHodin
         /// <summary>
         /// Získá nebo nastaví název kmenové třídy k této učebně.
         /// </summary>
-        public string KmenovaTrida { get; set; }
+        public string KmenovaTrida { get { return kmenovaTrida; } set { kmenovaTrida = value; } }
 
         /// <summary>
         /// Získá nebo nastaví typ výuky v učebně.
         /// </summary>
-        public TypVyuky Typ { get; set; }
+        public TypVyuky Typ { get { return typ; } set { typ = value; } }
 
         /// <summary>
         /// Získá nebo nastaví seznam předmětů vyučovaných v učebně.
         /// </summary>
-        public List<Predmet> VyucovanePredmety { get; set; }
+        public List<Predmet> VyucovanePredmety { get { return vyucovanePredmety; } set { vyucovanePredmety = value; } }
 
         #endregion
 

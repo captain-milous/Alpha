@@ -65,12 +65,12 @@ namespace RozvrhHodin
         /// <summary>
         /// Získá nebo nastaví informaci, zda je učitel třídním učitelem.
         /// </summary>
-        public string TridniUcitel { get; set; }
+        public string TridniUcitel { get { return tridniUcitel; } set { tridniUcitel = value; } }
 
         /// <summary>
         /// Získá nebo nastaví seznam předmětů, které učitel vyučuje.
         /// </summary>
-        public List<Predmet> VyucovanePredmety { get; set; }
+        public List<Predmet> VyucovanePredmety { get { return vyucovanePredmety; } set { vyucovanePredmety = value; } }
 
         #endregion
 
