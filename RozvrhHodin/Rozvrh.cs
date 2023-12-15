@@ -148,6 +148,25 @@ namespace RozvrhHodin
         }
 
         /// <summary>
+        /// Dodělat!!!!!
+        /// </summary>
+        /// <returns></returns>
+        public string PodrobnyVypis()
+        {
+            string output = string.Empty;
+            for(int i = 0;i<Tyden.Count;i++)
+            {
+                output += Tyden[i].Nazev + ":\n";
+                for(int j = 0; j < Tyden[i].RozvrhDne.Count; j++)
+                {
+                    int x = j + 1;
+                    output += x + ". " + Tyden[i].GetHodina(j).Predmet.ToString() + Tyden[i].GetHodina(j).Ucitel.ToString() +"\n";
+                }
+            }
+            return output;
+        }
+
+        /// <summary>
         /// Ohodnotí rozvrh přidáním bodů k hodnocení.
         /// </summary>
         /// <param name="points">Počet bodů k přidání</param>
