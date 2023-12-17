@@ -128,11 +128,9 @@ namespace RozvrhHodin
                 hodinySUcitelem.Add(hodSUc);
             }
 
-            // stage 2 - RND Přiřazení učeben pro cvičení
+            // stage 2 - RND Přiřazení učeben
             foreach(Hodina hodSUc in hodinySUcitelem)
             {
-                if(hodSUc.Predmet.Typ == TypVyuky.Cviceni)
-                {
                     List<Ucebna> ucebnyPredmetu = new List<Ucebna>();
                     for (int i = 0; i < ucebny.Count; i++)
                     {
@@ -156,7 +154,6 @@ namespace RozvrhHodin
                     {
                         throw new Exception("V listu učeben není žádná, která by dovolila učit tento předmět."); 
                     }
-                }
             }
 
             // stage 3 - Vytvoření surového rozvrhu, s tolika Hodinami, kolik daný předmět potřebuje
@@ -170,39 +167,7 @@ namespace RozvrhHodin
                 }
             }
 
-            // stage 4 - RND ucebny pro teorii
-            foreach (Hodina hod in rawRozvrh)
-            {
-                if (hod.Predmet.Typ == TypVyuky.Teorie)
-                {
-                    List<Ucebna> ucebnyPredmetu = new List<Ucebna>();
-                    for (int i = 0; i < ucebny.Count; i++)
-                    {
-                        foreach (Predmet vp in ucebny[i].VyucovanePredmety)
-                        {
-                            if (vp.Nazev == hod.Predmet.Nazev)
-                            {
-                                ucebnyPredmetu.Add(ucebny[i]);
-                            }
-                        }
-                    }
-                    if (ucebnyPredmetu.Count > 1)
-                    {
-                        hod.Ucebna = ucebnyPredmetu[(rnd.Next(1, ucebnyPredmetu.Count)) - 1];
-                    }
-                    else if (ucebnyPredmetu.Count == 1)
-                    {
-                        hod.Ucebna = ucebnyPredmetu[0];
-                    }
-                    else
-                    {
-                        throw new Exception("V listu učeben není žádná, která by dovolila učit tento předmět.");
-                    }
-                }            
-            }
-
-
-            // stage 5 - Přidání volných hodin a RND promíchání 
+            // stage 4 - Přidání volných hodin a RND promíchání 
             if (rawRozvrh.Count < 50)
             {
                 for (int i = rawRozvrh.Count; i < 50; i++)
@@ -216,7 +181,7 @@ namespace RozvrhHodin
             }
             rawRozvrh = Metody.PromichejList(rawRozvrh);
 
-            // stage 4 - Vytvoření strukturovaného rozvrhu
+            // stage 5 - Vytvoření strukturovaného rozvrhu
             List<Den> output = VytvorPrazdnyTyden();
             int hodina = 0;
             foreach (Den den in output)

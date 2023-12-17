@@ -10,7 +10,7 @@
 
         static int pocetGenRozvrhu = 0;
         static int pocetHodRozvrhu = 0;
-        static int threadCount = 15;
+        static int threadCount = 20;
         static int casovyLimit = 120;
 
         static object lockObject = new object();
@@ -110,6 +110,7 @@
                 Thread watchdog = new Thread(Watchdog);
                 watchdog.Start();
 
+
                 Thread[] mainThreads = new Thread[threadCount*2];
                 for (int i = 0; i < threadCount; i++)
                 {
@@ -140,6 +141,7 @@
 
             Console.WriteLine("\n\nKonec programu");
             Console.WriteLine(oddelovac);
+            Console.ReadLine();
         }
 
         /// <summary>
@@ -149,11 +151,7 @@
         {
             while (!stopAllThreads)
             {
-                string nazev = "R";
-                lock (lockObject)
-                {
-                    nazev += Metody.DecimalToHexadecimal(pocetGenRozvrhu);
-                }
+                string nazev = "R" + Metody.DecimalToHexadecimal(pocetGenRozvrhu);
                 bool rozvrhOK = true;
                 Rozvrh rozvrh = new Rozvrh();
                 try
@@ -167,6 +165,7 @@
                 }
                 if (rozvrhOK) 
                 {
+                    
                     lock (lockObject)
                     {
                         vygenerRozvrhy.Add(rozvrh);
@@ -185,12 +184,14 @@
             while (!stopAllThreads)
             {
                 Rozvrh hodnocenyRozvrh;
+                
                 lock (lockObject)
                 {
                     if (vygenerRozvrhy.Count > 0)
                     {
                         hodnocenyRozvrh = vygenerRozvrhy[0];
                         vygenerRozvrhy.RemoveAt(0);
+                        //hodnocenyRozvrh = Metody.OhodnotRozvrh(hodnocenyRozvrh);
                         //ohodnocRozvrhy.Add(hodnocenyRozvrh);
                         GC.SuppressFinalize(hodnocenyRozvrh);
                         pocetHodRozvrhu++;
