@@ -10,6 +10,7 @@
 
         static int pocetGenRozvrhu = 0;
         static int pocetHodRozvrhu = 0;
+        static int pocetLepsichRoz = 0;
         static int threadCount = 20;
         static int casovyLimit = 120;
 
@@ -20,6 +21,7 @@
         public static List<Predmet> predmety = new List<Predmet>();
         public static List<Ucebna> ucebny = new List<Ucebna>();
         public static List<Ucitel> ucitele = new List<Ucitel>();
+        public static Rozvrh originalC4b = new Rozvrh();
 
         /// <summary>
         /// Hlavní metoda programu, která řídí generování a ohodnocování rozvrhů.
@@ -33,16 +35,15 @@
             Console.WriteLine("Vítejte v programu Alpha! (Generátor rozvrhů)");
             Console.WriteLine("Autor: Miloš Tesař C4b");
             Console.WriteLine(oddelovac);
-            Rozvrh aktualC4b = new Rozvrh();
             try
             {
                 predmety = MetodyXML.ImportPredmety();
                 ucebny = MetodyXML.ImportUcebny();
                 ucitele = MetodyXML.ImportUcitele();
-                aktualC4b = Metody.OhodnotRozvrh(MetodyXML.ImportRozvrh("import.xml"));
+                originalC4b = Metody.OhodnotRozvrh(MetodyXML.ImportRozvrh("import.xml"));
 
-                ohodnocRozvrhy.Add(aktualC4b);
-                Console.WriteLine(aktualC4b);
+                ohodnocRozvrhy.Add(originalC4b);
+                Console.WriteLine(originalC4b);
                 Console.Write("Zmáčkněte Enter pro spuštění.");
                 Console.ReadLine();
 
@@ -141,12 +142,14 @@
 
                 Console.WriteLine($"Celkový počet vygenerovaných rozvrhů: {pocetGenRozvrhu}");
                 Console.WriteLine($"Celkový počet ohodnocených rozvrhů: {pocetHodRozvrhu}");
+                Console.WriteLine($"Celkový počet lepších rozvrhů než originál: {pocetLepsichRoz}");
+
+
             }
             else
             {
                 Console.WriteLine("Program nebyl spuštěn.");
             }
-
             Console.WriteLine("\n\nKonec programu");
             Console.WriteLine(oddelovac);
             Console.ReadLine();

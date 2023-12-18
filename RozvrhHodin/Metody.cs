@@ -156,7 +156,7 @@ namespace RozvrhHodin
                 {
                     if ((rozvrhDne[i].GetTypPredmetu() == TypVyuky.Teorie) && !(rozvrhDne[i].Volna))
                     {
-                        Boolean pouzito = false;
+                        bool pouzito = false;
                         for(int j = 0; j < pouziteHodiny.Count; j++)
                         {
                             if (rozvrhDne[i].GetNazevPredmetu() == pouziteHodiny[j].GetNazevPredmetu())
@@ -349,6 +349,27 @@ namespace RozvrhHodin
             foreach (Den den in rozvrh.Tyden)
             {
                 List<Hodina> rozvrhDne = den.RozvrhDne;
+                List<Hodina> hodiny = new List<Hodina>();
+                for (int i = 0; i < 10; i++)
+                {
+                    if (!(rozvrhDne[i].Volna))
+                    {
+                        bool pouzito = false;
+                        for (int j = 0; j < pouziteHodiny.Count; j++)
+                        {
+                            if (rozvrhDne[i].GetNazevPredmetu() == pouziteHodiny[j].GetNazevPredmetu())
+                            {
+                                points -= 100;
+                                pouzito = true;
+                            }
+                        }
+                        if (!pouzito)
+                        {
+                            pouziteHodiny.Add(rozvrhDne[i]);
+                            points += 10;
+                        }
+                    }
+                }
             }
             rozvrh.Ohodnotit(points);
             return rozvrh;
