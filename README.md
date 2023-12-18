@@ -17,12 +17,18 @@ Postupujte následovně:
 ### Konfigurace
 Konfigurace aplikace proběhne po spuštění programu.
 
-## Vstupní Data
+### Vstupní Data
 Program předpokládá, že máte definované předměty, učebny a učitele. Tyto informace jsou načítány ze souborů XML (v adresáři: "Alpha\RozvrhHodin\bin\Debug\net7.0\data"). V případě potřeby můžete tyto soubory upravit nebo doplnit podle vlastních potřeb.
 
 ## Ovládání Programu
-Po spuštění programu se program pokusí načíst vstupní data. Pokud se mu nepodaří je nepodaří načíst, vyhodí vám hlášku "Nepovedlo se načíst vstupní data." a program se ukončí. Tuto chybu lze předejít tím, že nebudete upravovat vstupní data.
-Následně budete vyzváni ke konfiguraci. Nejprve pomocí výběru třídy (C4a, C4b nebo C4c) a následně nastavením časového limitu běhu programu. Po zadaní těchto informací začne program generovat a ohodnocovat rozvrhy. Výsledky, včetně počtu vygenerovaných a ohodnocených rozvrhů, budou zobrazeny na konci běhu programu.
+Po spuštění programu se program pokusí načíst vstupní data. 
+- Pokud se mu nepodaří je načíst, vyhodí vám chybnou hlášku "Nepovedlo se načíst vstupní data." a program se sám automaticky ukončí. (Této chybě lze předejít tím, že nebudete upravovat vstupní data.)
+Následně budete vyzváni ke konfiguraci. 
+- Nejprve pomocí výběru třídy (C4a, C4b nebo C4c).
+- Poté nastavením časového limitu běhu programu. 
+Po zadaní těchto informací začne program generovat a ohodnocovat rozvrhy. 
+- (Více informací v sekci Generování Rozvrhu a Hodnocení Rozvrhu)
+Výsledky, včetně počtu vygenerovaných a ohodnocených rozvrhů, budou zobrazeny na konci běhu programu.
 
 ## Generování Rozvrhu
 Rozvrhy se generují v 5-ti krocích
@@ -84,4 +90,4 @@ Výjimky jsou vyvolány v případě, že jsou porušena pravidla nebo došlo k 
 
 ## Autor
 Miloš Tesař
-Žák z C4b na SPŠE Ječná
+Žák z C4b na SPŠE Ječná Praha 2
