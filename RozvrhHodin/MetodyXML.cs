@@ -56,6 +56,21 @@ namespace RozvrhHodin
             }
         }
 
+        public static Rozvrh ImportRozvrh(string fileName)
+        {
+            if (!fileName.EndsWith(".xml"))
+            {
+                fileName += ".xml";
+            }
+
+            string fullPath = Path.Combine(path, "rozvrhy\\" + fileName);
+            XmlSerializer serializer = new XmlSerializer(typeof(Rozvrh));
+            using (StreamReader streamReader = new StreamReader(fullPath))
+            {
+                return (Rozvrh)serializer.Deserialize(streamReader);
+            }
+        }
+
         /// <summary>
         /// Exportuje seznam předmětů do XML souboru.
         /// </summary>
@@ -134,6 +149,33 @@ namespace RozvrhHodin
             using (StreamWriter streamWriter = new StreamWriter(fullPath))
             {
                 serializer.Serialize(streamWriter, dataList);
+            }
+        }
+
+        /// <summary>
+        /// Exportuje rozvrh do XML souboru.
+        /// </summary>
+        /// <param name="dataList">Rozvrh k exportu.</param>
+        /// <param name="fileName">Název XML souboru.</param>
+        public static void ExportRozvrh(Rozvrh rozvrh, string fileName)
+        {
+            if (!fileName.EndsWith(".xml"))
+            {
+                fileName += ".xml";
+            }
+
+            string fullPath = Path.Combine(path, "rozvrhy\\", fileName);
+            int count = 1;
+            while (File.Exists(fullPath))
+            {
+                fileName = $"{Path.GetFileNameWithoutExtension(fileName)} ({count}).xml";
+                fullPath = Path.Combine(path, "rozvrhy\\", fileName);
+                count++;
+            }
+            XmlSerializer serializer = new XmlSerializer(typeof(Rozvrh));
+            using (StreamWriter streamWriter = new StreamWriter(fullPath))
+            {
+                serializer.Serialize(streamWriter, rozvrh);
             }
         }
     }

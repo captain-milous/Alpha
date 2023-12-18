@@ -64,7 +64,7 @@ namespace RozvrhHodin
             foreach (Den den in rozvrh.Tyden)
             {
                 List<Hodina> rozvrhDne = den.RozvrhDne;
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < rozvrhDne.Count; i++)
                 {
                     if (rozvrhDne[i].Volna == true)
                     {

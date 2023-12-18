@@ -45,12 +45,41 @@
                 Console.WriteLine(ex.ToString() + "\n\n");
                 run = false;
             }
-            /*
-            Rozvrh test = new Rozvrh("Test","C4b",predmety,ucebny,ucitele);
-            test = Metody.OhodnotRozvrh(test);
+            
+            Rozvrh test = MetodyXML.ImportRozvrh("export.xml");
+            //MetodyXML.ExportRozvrh(test, "test");
+            /*test.Nazev = "Aktuální";
+            int k = 0;
+            foreach(Predmet predmet in predmety)
+            {
+                Console.WriteLine(k + ". " + predmet.Nazev);
+                k++;
+            }
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(test.Tyden[i].Nazev);
+                for(int j = 1; j <= 10; j++)
+                {
+                    Console.Write(j + ". hodina: ");
+                    int inputTest = Convert.ToInt32(Console.ReadLine());
+                    if (inputTest >= 0 && inputTest <= 16)
+                    {
+                        test.Tyden[i].AddHodina(new Hodina(predmety[inputTest]));
+                        //test.SetHodina(i, j, new Hodina(predmety[inputTest]) );
+                    }
+                    else
+                    {
+                        test.Tyden[i].AddHodina(new Hodina());
+                    }
+                }
+            }
+            MetodyXML.ExportRozvrh(test, "export");*/
+            //test = Metody.OhodnotRozvrh(test);
             Console.WriteLine(test);
-            Console.WriteLine(test.PodrobnyVypis());
-            */
+            //Console.WriteLine(test.PodrobnyVypis());
+            
+
+            Console.ReadLine();
             int input = 0;
             while (run)
             {
@@ -177,7 +206,6 @@
                         pocetGenRozvrhu++;
                     }
                 }
-                
             }
         }
 
@@ -188,7 +216,7 @@
         {
             while (!stopAllThreads)
             {
-                Rozvrh hodnocenyRozvrh;
+                Rozvrh hodnocenyRozvrh = new Rozvrh();
                 
                 lock (lockObject)
                 {
@@ -197,14 +225,18 @@
                         hodnocenyRozvrh = vygenerRozvrhy[0];
                         vygenerRozvrhy.RemoveAt(0);
                         hodnocenyRozvrh = Metody.OhodnotRozvrh(hodnocenyRozvrh);
-                        if(hodnocenyRozvrh.Hodnoceni > 0)
-                        {
-                            //ohodnocRozvrhy.Add(hodnocenyRozvrh);
-                            pocetHodRozvrhu++;
-                        }
-                        GC.SuppressFinalize(hodnocenyRozvrh);
+                        
                     }
                 }
+                if (hodnocenyRozvrh.Hodnoceni > 0)
+                {
+                    lock (lockObject)
+                    {
+                        //ohodnocRozvrhy.Add(hodnocenyRozvrh);
+                        pocetHodRozvrhu++;
+                    }
+                }
+                GC.SuppressFinalize(hodnocenyRozvrh);
             }
         }
 
