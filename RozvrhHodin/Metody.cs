@@ -66,7 +66,7 @@ namespace RozvrhHodin
                 List<Hodina> rozvrhDne = den.RozvrhDne;
                 for (int i = 0; i < rozvrhDne.Count; i++)
                 {
-                    if (rozvrhDne[i].Volna == true)
+                    if (rozvrhDne[i].Volna)
                     {
                         switch (i)
                         {
@@ -101,8 +101,7 @@ namespace RozvrhHodin
                                 points += 150;
                                 break;
                             default:
-                                throw new Exception("Tohle by nikdy nemělo nastat");
-                                break;
+                                throw new Exception("Tohle by nikdy nemělo nastat..");
                         }
                     }
                     else
@@ -110,7 +109,7 @@ namespace RozvrhHodin
                         switch (i)
                         {
                             case 0:
-                                points += 100;
+                                // nepřidáváme/neubíráme
                                 break;
                             case 1:
                                 points += 100;
@@ -131,7 +130,7 @@ namespace RozvrhHodin
                                 // nepřidáváme/neubíráme
                                 break;
                             case 7:
-                                points -= 500;
+                                points -= 50;
                                 break;
                             case 8:
                                 points -= 100;
@@ -141,7 +140,6 @@ namespace RozvrhHodin
                                 break;
                             default:
                                 throw new Exception("Tohle by nikdy nemělo nastat");
-                                break;
                         }
                     }
                 }
@@ -158,7 +156,7 @@ namespace RozvrhHodin
                 {
                     if ((rozvrhDne[i].GetTypPredmetu() == TypVyuky.Teorie) && !(rozvrhDne[i].Volna))
                     {
-                        bool pouzito = false;
+                        Boolean pouzito = false;
                         for(int j = 0; j < pouziteHodiny.Count; j++)
                         {
                             if (rozvrhDne[i].GetNazevPredmetu() == pouziteHodiny[j].GetNazevPredmetu())
@@ -170,6 +168,7 @@ namespace RozvrhHodin
                         if (!pouzito)
                         {
                             pouziteHodiny.Add(rozvrhDne[i]);
+                            points += 10;
                         }
                     }
                 }
@@ -185,15 +184,18 @@ namespace RozvrhHodin
                 {
                     int j = i + 1;
                     int rawPoints = 10;
-                    if (rozvrhDne[i].GetNazevUcebny() != rozvrhDne[j].GetNazevUcebny())
+                    if (!rozvrhDne[i].Volna || !rozvrhDne[j].Volna)
                     {
-                        int rozdilPater = Math.Abs(rozvrhDne[i].GetPatroUcebny() - rozvrhDne[j].GetPatroUcebny()) + 1;
-                        points -= rawPoints * rozdilPater;
-                    }
-                    else
-                    {
-                        points += rawPoints * 10;
-                    }
+                        if (rozvrhDne[i].GetNazevUcebny() != rozvrhDne[j].GetNazevUcebny())
+                        {
+                            int rozdilPater = Math.Abs(rozvrhDne[i].GetPatroUcebny() - rozvrhDne[j].GetPatroUcebny()) + 1;
+                            points -= rawPoints * rozdilPater;
+                        }
+                        else
+                        {
+                            points += rawPoints;
+                        }
+                    }                   
                 }
             }
             rozvrh.Ohodnotit(points);
@@ -232,10 +234,10 @@ namespace RozvrhHodin
                 switch(vyucHodiny)
                 {
                     case 5:
-                        points += 1000;
+                        points += 150;
                         break;
                     case 6:
-                        points += 1000;
+                        points += 100;
                         break;
                     case 8:
                         points -= 100;
@@ -264,11 +266,11 @@ namespace RozvrhHodin
                         {
                             if(j == 0 || k == rozvrhDne.Count)
                             {
-                                points += 2000;
+                                points += 200;
                             }
                             else
                             {
-                                points += 1000;
+                                points += 100;
                             }
                         }
                         else
@@ -309,7 +311,7 @@ namespace RozvrhHodin
             }
             if (vyucujeTridni)
             {
-                points = 10000;
+                points = 1000;
             }
             else
             {
@@ -332,7 +334,7 @@ namespace RozvrhHodin
             }
             if (vyucujeVeKmenove)
             {
-                points = 10000;
+                points = 1000;
             }
             else
             {

@@ -41,7 +41,11 @@
                 ucitele = MetodyXML.ImportUcitele();
                 aktualC4b = Metody.OhodnotRozvrh(MetodyXML.ImportRozvrh("import.xml"));
 
+                ohodnocRozvrhy.Add(aktualC4b);
                 Console.WriteLine(aktualC4b);
+                Console.Write("Zmáčkněte Enter pro spuštění.");
+                Console.ReadLine();
+
             }
             catch (Exception ex)
             {
@@ -49,9 +53,7 @@
                 Console.WriteLine(ex.ToString() + "\n\n");
                 run = false;
             }
-
-
-            Console.ReadLine();
+       
             int input = 0;
             while (run)
             {
@@ -109,11 +111,6 @@
                     run = true;
                 }
                 Console.WriteLine(oddelovac);
-            }
-
-            if(trida == "C4b")
-            {
-                ohodnocRozvrhy.Add(aktualC4b);
             }
 
             if (runThreads)
