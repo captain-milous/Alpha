@@ -1,6 +1,6 @@
 # Generátor Rozvrhů (Alpha)
 ## Popis
-    Tento projekt v jazyce C# obsahuje třídy a metody pro generování náhodných rozvrhů pro třídy C4a, C4b a C4c. Kromě generování rozvrhů umožňuje také jejich ohodnocování. Projekt využívá vícevláknový přístup pro efektivní generování a hodnocení rozvrhů.
+Tento projekt v jazyce C# obsahuje třídy a metody pro generování náhodných rozvrhů pro třídy C4a, C4b a C4c. Kromě generování rozvrhů umožňuje také jejich ohodnocování. Projekt využívá vícevláknový přístup pro efektivní generování a hodnocení rozvrhů.
 
 ## Spuštění
 ### Předpoklady
