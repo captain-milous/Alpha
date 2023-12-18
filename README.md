@@ -1,6 +1,7 @@
 # Generátor Rozvrhů (Alpha)
 ## Popis
-Tento projekt v jazyce C# obsahuje třídy a metody pro generování náhodných rozvrhů pro třídy C4a, C4b a C4c. Kromě generování rozvrhů umožňuje také jejich ohodnocování. Projekt využívá vícevláknový přístup pro efektivní generování a hodnocení rozvrhů.
+Tento projekt v jazyce C# obsahuje třídy a metody pro generování náhodných rozvrhů pro třídy C4a, C4b a C4c. Kromě generování rozvrhů umožňuje také jejich ohodnocování. 
+Projekt využívá vícevláknový přístup pro efektivní generování a hodnocení rozvrhů.
 
 ## Spuštění
 ### Předpoklady
@@ -18,11 +19,13 @@ Postupujte následovně:
 Konfigurace aplikace proběhne po spuštění programu.
 
 ### Vstupní Data
-Program předpokládá, že máte definované předměty, učebny a učitele. Tyto informace jsou načítány ze souborů XML (v adresáři: "Alpha\RozvrhHodin\bin\Debug\net7.0\data"). V případě potřeby můžete tyto soubory upravit nebo doplnit podle vlastních potřeb.
+Program předpokládá, že máte definované předměty, učebny a učitele. Tyto informace jsou načítány ze souborů XML (v adresáři: "Alpha\RozvrhHodin\bin\Debug\net7.0\data"). 
+V případě potřeby můžete tyto soubory upravit nebo doplnit podle vlastních potřeb.
 
 ## Ovládání Programu
 Po spuštění programu se program pokusí načíst vstupní data. 
-- Pokud se mu nepodaří je načíst, vyhodí vám chybnou hlášku "Nepovedlo se načíst vstupní data." a program se sám automaticky ukončí. (Této chybě lze předejít tím, že nebudete upravovat vstupní data.)
+- Pokud se mu nepodaří je načíst, vyhodí vám chybnou hlášku "Nepovedlo se načíst vstupní data." a program se automaticky ukončí. 
+(Této chybě lze předejít tím, že nebudete upravovat vstupní data.)
 
 Následně budete vyzváni ke konfiguraci. 
 - Nejprve pomocí výběru třídy (C4a, C4b nebo C4c).
@@ -93,4 +96,5 @@ Výjimky jsou vyvolány v případě, že jsou porušena pravidla nebo došlo k 
 
 ## Autor
 Miloš Tesař
+
 Žák z C4b na SPŠE Ječná Praha 2
