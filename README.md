@@ -15,10 +15,7 @@ Postupujte následovně:
 4. Spusťte aplikaci: "RozvrhHodin.exe"
 
 ### Konfigurace
-Projekt obsahuje několik parametrů, které lze konfigurovat po spuštění:
-
-trida: Třída pro kterou chcete vytvářet rozvrhy.
-casovyLimit: Časový limit běhu programu v sekundách.
+Konfigurace aplikace proběhne po spuštění programu.
 
 ## Vstupní Data
 Program předpokládá, že máte definované předměty, učebny a učitele. Tyto informace jsou načítány ze souborů XML (v adresáři: "Alpha\RozvrhHodin\bin\Debug\net7.0\data"). V případě potřeby můžete tyto soubory upravit nebo doplnit podle vlastních potřeb.
