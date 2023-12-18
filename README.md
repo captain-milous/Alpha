@@ -23,11 +23,14 @@ Program předpokládá, že máte definované předměty, učebny a učitele. Ty
 ## Ovládání Programu
 Po spuštění programu se program pokusí načíst vstupní data. 
 - Pokud se mu nepodaří je načíst, vyhodí vám chybnou hlášku "Nepovedlo se načíst vstupní data." a program se sám automaticky ukončí. (Této chybě lze předejít tím, že nebudete upravovat vstupní data.)
+
 Následně budete vyzváni ke konfiguraci. 
 - Nejprve pomocí výběru třídy (C4a, C4b nebo C4c).
 - Poté nastavením časového limitu běhu programu. 
+
 Po zadaní těchto informací začne program generovat a ohodnocovat rozvrhy. 
 - (Více informací v sekci Generování Rozvrhu a Hodnocení Rozvrhu)
+
 Výsledky, včetně počtu vygenerovaných a ohodnocených rozvrhů, budou zobrazeny na konci běhu programu.
 
 ## Generování Rozvrhu
