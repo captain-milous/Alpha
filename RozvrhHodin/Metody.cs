@@ -150,7 +150,30 @@ namespace RozvrhHodin
             // 2 - Pokud v je stejný předmět vícekrát v jeden den a není to vícehodinovka, tak to je špatně.
             // Cvičení a teorie ale v jeden den být mohou. Také úplně štastně a rozumné, když cvičení předchází teorii.
             points = 0;
-
+            foreach (Den den in rozvrh.Tyden)
+            {
+                List<Hodina> rozvrhDne = den.RozvrhDne;
+                List<Hodina> pouziteHodiny = new List<Hodina>();
+                for (int i = 0; i < 10; i++)
+                {
+                    if ((rozvrhDne[i].GetTypPredmetu() == TypVyuky.Teorie) && !(rozvrhDne[i].Volna))
+                    {
+                        bool pouzito = false;
+                        for(int j = 0; j < pouziteHodiny.Count; j++)
+                        {
+                            if (rozvrhDne[i].GetNazevPredmetu() == pouziteHodiny[j].GetNazevPredmetu())
+                            {
+                                points -= 100;
+                                pouzito = true;
+                            }
+                        }
+                        if (!pouzito)
+                        {
+                            pouziteHodiny.Add(rozvrhDne[i]);
+                        }
+                    }
+                }
+            }
             rozvrh.Ohodnotit(points);
             // 3 - Pokud musím mezi hodinami přecházet do jiného patra je to špatně, pokud do jiné učebny,
             // je to taky špatně ale pokud je to na stejném patře, tak to není tak hrozné.
@@ -158,7 +181,20 @@ namespace RozvrhHodin
             foreach (Den den in rozvrh.Tyden)
             {
                 List<Hodina> rozvrhDne = den.RozvrhDne;
-
+                for (int i = 0; i < (rozvrhDne.Count - 1); i++)
+                {
+                    int j = i + 1;
+                    int rawPoints = 10;
+                    if (rozvrhDne[i].GetNazevUcebny() != rozvrhDne[j].GetNazevUcebny())
+                    {
+                        int rozdilPater = Math.Abs(rozvrhDne[i].GetPatroUcebny() - rozvrhDne[j].GetPatroUcebny()) + 1;
+                        points -= rawPoints * rozdilPater;
+                    }
+                    else
+                    {
+                        points += rawPoints * 10;
+                    }
+                }
             }
             rozvrh.Ohodnotit(points);
             // 4 - Obědy se vydávají mezi 5. a 8. hodinou, takže každý den jedna z hodin číslo 5., 6., 7. nebo 8. musí být volná na oběd.
@@ -215,26 +251,104 @@ namespace RozvrhHodin
             rozvrh.Ohodnotit(points);
             // 6 - Když je cvičení dvouhodinové, tříhodinové tak ty hodiny musí být u sebe v jednom dni.
             points = 0;
-
+            foreach (Den den in rozvrh.Tyden)
+            {
+                List<Hodina> rozvrhDne = den.RozvrhDne;
+                for (int i = 1; i < (rozvrhDne.Count - 1); i++)
+                {
+                    if(rozvrhDne[i].GetTypPredmetu() == TypVyuky.Cviceni)
+                    {
+                        int j = i - 1;
+                        int k = j + 1;
+                        if(rozvrhDne[i].GetNazevPredmetu() == rozvrhDne[j].GetNazevPredmetu() || rozvrhDne[i].GetNazevPredmetu() == rozvrhDne[k].GetNazevPredmetu())
+                        {
+                            if(j == 0 || k == rozvrhDne.Count)
+                            {
+                                points += 2000;
+                            }
+                            else
+                            {
+                                points += 1000;
+                            }
+                        }
+                        else
+                        {
+                            points -= 10000;
+                        }
+                    }
+                }
+            }
             rozvrh.Ohodnotit(points);
             // 7 - Matematika a profilové předměty by se neměli učit ani první hodinu, ani po obědové pauze, za to musí být body dolu.
             points = 0;
-
+            foreach (Den den in rozvrh.Tyden)
+            {
+                List<Hodina> rozvrhDne = den.RozvrhDne;
+                if (rozvrhDne[0].GetNazevPredmetu() == "Matematika")
+                {
+                    points -= 1000;
+                }
+                else
+                {
+                    points += 100;
+                }
+            }
             rozvrh.Ohodnotit(points);
-            // 8 - pravidlo #1 Bonus za to že vyučuje třídu jejich třídní učitel
-            points = 0;
-
+            // 8 - Moje pravidlo #1 Bonus za to že vyučuje třídu jejich třídní učitel
+            bool vyucujeTridni = false;
+            foreach (Den den in rozvrh.Tyden)
+            {
+                List<Hodina> rozvrhDne = den.RozvrhDne;
+                for (int i = 0; i < rozvrhDne.Count; i++)
+                {
+                    if (rozvrhDne[i].GetTridaUcitele() == rozvrh.Trida)
+                    {
+                        vyucujeTridni = true;
+                    }
+                }
+            }
+            if (vyucujeTridni)
+            {
+                points = 10000;
+            }
+            else
+            {
+                points = -10000;
+            }
             rozvrh.Ohodnotit(points);
-            // 9 - pravidlo #2 Bonus za to že se učí ve své kmenové třídě
+            // 9 - Moje pravidlo #2 Bonus za to že se učí ve své kmenové třídě
             points = 0;
-
+            bool vyucujeVeKmenove = false;
+            foreach (Den den in rozvrh.Tyden)
+            {
+                List<Hodina> rozvrhDne = den.RozvrhDne;
+                for (int i = 0; i < rozvrhDne.Count; i++)
+                {
+                    if (rozvrhDne[i].GetKmenTridaUcebny() == rozvrh.Trida)
+                    {
+                        vyucujeVeKmenove = true;
+                    }
+                }
+            }
+            if (vyucujeVeKmenove)
+            {
+                points = 10000;
+            }
+            else
+            {
+                points = -10000;
+            }
             rozvrh.Ohodnotit(points);
             // 10 - Wellbeing pravilo - Musi reflektovat Váš wellbeing,
             // napr. pokud nemate/mate radi urcite ucebny/ucitele/predmety. Napr. nemam rad ucitele A, B a C, tak rozvrh ktery obsahuje dny,
             // kde uci jen tihle tri dostane penale. Nebo naopak, pokud mam rad ucitele X a rozvrh vysel tak,
             // ze ho potkam kazdy den alespon 1x je to lepsi, nez kdyz ho napr. 3 dny v kuse nepotkam.
-
-
+            points = 0;
+            foreach (Den den in rozvrh.Tyden)
+            {
+                List<Hodina> rozvrhDne = den.RozvrhDne;
+            }
+            rozvrh.Ohodnotit(points);
             return rozvrh;
         }
     }

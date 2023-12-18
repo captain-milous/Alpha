@@ -45,7 +45,12 @@
                 Console.WriteLine(ex.ToString() + "\n\n");
                 run = false;
             }
-
+            /*
+            Rozvrh test = new Rozvrh("Test","C4b",predmety,ucebny,ucitele);
+            test = Metody.OhodnotRozvrh(test);
+            Console.WriteLine(test);
+            Console.WriteLine(test.PodrobnyVypis());
+            */
             int input = 0;
             while (run)
             {
@@ -191,10 +196,13 @@
                     {
                         hodnocenyRozvrh = vygenerRozvrhy[0];
                         vygenerRozvrhy.RemoveAt(0);
-                        //hodnocenyRozvrh = Metody.OhodnotRozvrh(hodnocenyRozvrh);
-                        //ohodnocRozvrhy.Add(hodnocenyRozvrh);
+                        hodnocenyRozvrh = Metody.OhodnotRozvrh(hodnocenyRozvrh);
+                        if(hodnocenyRozvrh.Hodnoceni > 0)
+                        {
+                            //ohodnocRozvrhy.Add(hodnocenyRozvrh);
+                            pocetHodRozvrhu++;
+                        }
                         GC.SuppressFinalize(hodnocenyRozvrh);
-                        pocetHodRozvrhu++;
                     }
                 }
             }
