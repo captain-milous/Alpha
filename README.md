@@ -8,10 +8,10 @@ Pro správné spuštění programu je nutné být na počítačovém zařízení
 
 ### Postup
 
-#### Stáhněte si zazipovaný soubor do svého počítače.
-#### Soubor Extrahujte.
-#### Přesuňte se do adresáře: "Alpha\RozvrhHodin\bin\Debug\net7.0" 
-#### Spusťte aplikaci: "RozvrhHodin.exe"
+#### - Stáhněte si zazipovaný soubor do svého počítače.
+#### - Soubor Extrahujte.
+#### - Přesuňte se do adresáře: "Alpha\RozvrhHodin\bin\Debug\net7.0" 
+#### - Spusťte aplikaci: "RozvrhHodin.exe"
 
 ### Konfigurace
 Projekt obsahuje několik parametrů, které lze konfigurovat po spuštění:
