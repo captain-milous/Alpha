@@ -207,6 +207,13 @@
                 }
                 if (hodnocenyRozvrh.Hodnoceni > 0)
                 {
+                    if(hodnocenyRozvrh.Hodnoceni > originalC4b.Hodnoceni)
+                    {
+                        lock(lockObject)
+                        {
+                            pocetLepsichRoz++;
+                        }
+                    }
                     lock (lockObject)
                     {
                         //ohodnocRozvrhy.Add(hodnocenyRozvrh);
