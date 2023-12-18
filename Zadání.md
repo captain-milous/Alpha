@@ -1,14 +1,16 @@
+# α.1 Zlepši svůj rozvrh
 V této úloze budeme pracovat s Vaším vlastním rozvrhem. Předpokládejme rozvrh jednoho konkrétního žáka SPŠE Ječná, tedy Vás. (Uvažujeme tedy rozvrh bez dělení, např. mám-li v pondělí předmět PSS a druhá skupina DS, tak uvažuji že v rozvrhu je jen to PSS). 
 
 Prvním krokem v této úloze je vymyslet, jak rozvrh zachytit pomocí nějakého modelu nebo datové struktury. Například velmi zjednodušeně, budeme-li ignorovat učebny, učitele a nebudeme rozlišovat cvičení a teorii, by to mohlo třeba být takto:
 
-rozvrh = [
-    "M", "DS", "DS", "PSS", "PSS", "A", None, "TV", None, None,
-    "PIS", "M", "PIS", "PIS", "TP", "A", "CJ", None, None, None,
-    "CIT", "CIT", "WA", "DS", "PV", None, "PSS", None, None, None,
-    "AM", "M", "WA", "WA", None, "A", "C", "PIS", "TV", None,
-    "C",   "A", "M", "PV", "PV", "AM", None, None, None, None 
-]
+    rozvrh = [
+        "M", "DS", "DS", "PSS", "PSS", "A", None, "TV", None, None,
+        "PIS", "M", "PIS", "PIS", "TP", "A", "CJ", None, None, None,
+        "CIT", "CIT", "WA", "DS", "PV", None, "PSS", None, None, None,
+        "AM", "M", "WA", "WA", None, "A", "C", "PIS", "TV", None,
+        "C",   "A", "M", "PV", "PV", "AM", None, None, None, None 
+    ]
+
 Pokud ale chcete alespoň čtyřku, tak to samožejmě zvládnete lépe, tj. s učiteli, učebnami, apod. Možná použijete i třídy a určitě i lepší kolekce. Ten kód výše berme spíš jako rozvcičku, nebo jen pro testování generátorů, viz. dále.
 
 Dále musíte vytvořit kód, který bude mít nejméně tři typy skutečně paralelně běžících procesů/vláken.
@@ -52,7 +54,7 @@ Při implementaci doporučujeme nezůstávat jen u třech vláken (generátor, h
 
 Upozorňujeme, že tato úloha není týmová ale samostatná a lze ji napsat mnoha způsoby. Je velmi nepravděpodobné, že dva žáci budou mít stejný program, nebo jakoukoli jeho část a proto se vyvarujte inspiracím ze zdrojových kódů spolužáků a týmové spolupráci a předejděte případným plagiátům. Pokud použijete cizí kód, například ten, který naše automatická kontrola dokáže vygooglit nebo ho najde na githubu, uveďte vždy zdroj v dokumentaci a raději i README.
 
-Kritéria hodnocení:
+## Kritéria hodnocení:
 
 Spuštění programu mísí alespoň na 5 sec zatížit všechna procesorová jádra běžného školního PC.
 Program musí obsahovat alespoň jedno synchronizační primitivum, které je účelně použito jednotlivé paralelní částí musí nějak sdílet/komunikovat informace.
