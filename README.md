@@ -7,11 +7,12 @@ Tento projekt v jazyce C# obsahuje třídy a metody pro generování náhodných
 Pro správné spuštění programu je nutné být na počítačovém zařízení Windows 10 a více
 
 ### Postup
+Postupujte následovně:
 
-#### - Stáhněte si zazipovaný soubor do svého počítače.
-#### - Soubor Extrahujte.
-#### - Přesuňte se do adresáře: "Alpha\RozvrhHodin\bin\Debug\net7.0" 
-#### - Spusťte aplikaci: "RozvrhHodin.exe"
+1. Stáhněte si zazipovaný soubor do svého počítače.
+2. Soubor Extrahujte.
+3. Přesuňte se do adresáře: "Alpha\RozvrhHodin\bin\Debug\net7.0" 
+4. Spusťte aplikaci: "RozvrhHodin.exe"
 
 ### Konfigurace
 Projekt obsahuje několik parametrů, které lze konfigurovat po spuštění:
