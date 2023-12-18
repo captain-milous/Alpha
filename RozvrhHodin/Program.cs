@@ -45,7 +45,7 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Nepovedlo se načíst soubory..\n");
+                Console.WriteLine("Nepovedlo se načíst vstupní data..\n");
                 Console.WriteLine(ex.ToString() + "\n\n");
                 run = false;
             }
