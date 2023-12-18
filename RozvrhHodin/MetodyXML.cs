@@ -67,7 +67,17 @@ namespace RozvrhHodin
             XmlSerializer serializer = new XmlSerializer(typeof(Rozvrh));
             using (StreamReader streamReader = new StreamReader(fullPath))
             {
-                return (Rozvrh)serializer.Deserialize(streamReader);
+                Rozvrh output = (Rozvrh)serializer.Deserialize(streamReader);
+                // Z nějakého důvodu se zde tvoří dva rozvrhy v jednom, tak ten jeden mažu
+                if (output.Tyden.Count > 5)
+                {
+                    int k = (output.Tyden.Count - 5);
+                    for (int i = 0; i < k; i++)
+                    {
+                        output.Tyden.RemoveAt(0);
+                    }
+                }
+                return output;
             }
         }
 

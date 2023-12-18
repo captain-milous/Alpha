@@ -15,6 +15,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -24,6 +37,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -33,6 +59,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>3</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -42,6 +81,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>4</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -51,6 +103,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>4</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>true</Volna>
@@ -82,6 +147,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -91,6 +169,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>true</Volna>
@@ -150,6 +241,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>4</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -159,6 +263,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>1</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -168,6 +285,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -177,6 +307,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -186,6 +329,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>4</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -195,6 +351,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>true</Volna>
@@ -226,6 +395,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>true</Volna>
@@ -285,6 +467,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -294,6 +489,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>3</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -303,6 +511,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -312,6 +533,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -321,6 +555,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -330,6 +577,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>4</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -339,6 +599,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>1</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>true</Volna>
@@ -420,6 +693,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>1</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -429,6 +715,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>4</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -438,6 +737,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -447,6 +759,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>1</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -456,6 +781,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>4</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -465,6 +803,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>3</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -474,6 +825,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>1</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>true</Volna>
@@ -577,6 +941,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -586,6 +963,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -595,6 +985,19 @@
             <Typ>Teorie</Typ>
             <HodinTydne>4</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -604,6 +1007,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -613,6 +1029,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>false</Volna>
@@ -622,6 +1051,19 @@
             <Typ>Cviceni</Typ>
             <HodinTydne>2</HodinTydne>
           </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
         </Hodina>
         <Hodina>
           <Volna>true</Volna>

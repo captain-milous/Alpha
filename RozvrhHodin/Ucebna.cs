@@ -85,7 +85,7 @@ namespace RozvrhHodin
         /// <returns>(string) Výpis učebny</returns>
         public override string ToString()
         {
-            if(kmenovaTrida != string.Empty)
+            if(kmenovaTrida != "None")
             {
                 return "Učebna " + Nazev + " je kmenovou pro tridu " + kmenovaTrida + ", lze zde učit předměty které jsou " + Typ.ToString();
             }

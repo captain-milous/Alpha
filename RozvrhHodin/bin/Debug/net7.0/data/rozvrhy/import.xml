@@ -1,0 +1,2844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Rozvrh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nazev>Aktuální</Nazev>
+  <Trida>C4b</Trida>
+  <Tyden>
+    <Den>
+      <Nazev>Pondělí</Nazev>
+      <Zkratka>Po</Zkratka>
+      <RozvrhDne>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Webové aplikace (Cvičení)</Nazev>
+            <Zkratka>WA</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>17</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Mykyta Narusevych</CeleJmeno>
+            <Zkratka>Na</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Webové aplikace (Cvičení)</Nazev>
+            <Zkratka>WA</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>17</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Mykyta Narusevych</CeleJmeno>
+            <Zkratka>Na</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Český jazyk a literatura</Nazev>
+            <Zkratka>C</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>3</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>MUDr. Kristina Studénková</CeleJmeno>
+            <Zkratka>Su</Zkratka>
+            <TridniUcitel>C2a</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Anglický Jazyk</Nazev>
+            <Zkratka>A</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>4</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Bc. Šárka Páltiková</CeleJmeno>
+            <Zkratka>Pa</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Matematika</Nazev>
+            <Zkratka>M</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>4</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Eva Neugebauerová</CeleJmeno>
+            <Zkratka>Ng</Zkratka>
+            <TridniUcitel>C4b</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Programové vybavení (Cvičení)</Nazev>
+            <Zkratka>PV</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>18</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+                <Zkratka>CIT</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Ondřej Mandík</CeleJmeno>
+            <Zkratka>Ma</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Programové vybavení (Cvičení)</Nazev>
+            <Zkratka>PV</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>18</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+                <Zkratka>CIT</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Ondřej Mandík</CeleJmeno>
+            <Zkratka>Ma</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+      </RozvrhDne>
+    </Den>
+    <Den>
+      <Nazev>Úterý</Nazev>
+      <Zkratka>Ut</Zkratka>
+      <RozvrhDne>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Matematika</Nazev>
+            <Zkratka>M</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>4</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Eva Neugebauerová</CeleJmeno>
+            <Zkratka>Ng</Zkratka>
+            <TridniUcitel>C4b</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Technický projekt</Nazev>
+            <Zkratka>TP</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>1</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Vít Nohejl</CeleJmeno>
+            <Zkratka>No</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+            <Zkratka>PSS</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>8a</Nazev>
+            <Patro>2</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Jan Molič</CeleJmeno>
+            <Zkratka>Mo</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+            <Zkratka>PSS</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>8a</Nazev>
+            <Patro>2</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Jan Molič</CeleJmeno>
+            <Zkratka>Mo</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Anglický Jazyk</Nazev>
+            <Zkratka>A</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>4</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>5b</Nazev>
+            <Patro>1</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Bc. Šárka Páltiková</CeleJmeno>
+            <Zkratka>Pa</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Aplikovaná matematika</Nazev>
+            <Zkratka>AM</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Filip Kallmünzer</CeleJmeno>
+            <Zkratka>Kl</Zkratka>
+            <TridniUcitel>A2a</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Tělesná Výchova</Nazev>
+            <Zkratka>TV</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>TV</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Tělesná Výchova</Nazev>
+                <Zkratka>TV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Pavel Lopocha</CeleJmeno>
+            <Zkratka>Lo</Zkratka>
+            <TridniUcitel>A2b</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Tělesná Výchova</Nazev>
+                <Zkratka>TV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+      </RozvrhDne>
+    </Den>
+    <Den>
+      <Nazev>Středa</Nazev>
+      <Zkratka>St</Zkratka>
+      <RozvrhDne>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+            <Zkratka>PIS</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Lucie Brčáková</CeleJmeno>
+            <Zkratka>Bc</Zkratka>
+            <TridniUcitel>C4c</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Český jazyk a literatura</Nazev>
+            <Zkratka>C</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>3</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>MUDr. Kristina Studénková</CeleJmeno>
+            <Zkratka>Su</Zkratka>
+            <TridniUcitel>C2a</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+            <Zkratka>CIT</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>19</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+                <Zkratka>CIT</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Mgr. Vladimír Váňa, CSc.</CeleJmeno>
+            <Zkratka>Vd</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+                <Zkratka>CIT</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+            <Zkratka>CIT</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>19</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+                <Zkratka>CIT</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Mgr. Vladimír Váňa, CSc.</CeleJmeno>
+            <Zkratka>Vd</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+                <Zkratka>CIT</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Aplikovaná matematika</Nazev>
+            <Zkratka>AM</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Filip Kallmünzer</CeleJmeno>
+            <Zkratka>Kl</Zkratka>
+            <TridniUcitel>A2a</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Matematika</Nazev>
+            <Zkratka>M</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>4</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Eva Neugebauerová</CeleJmeno>
+            <Zkratka>Ng</Zkratka>
+            <TridniUcitel>C4b</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Databázové systémy (Teorie)</Nazev>
+            <Zkratka>DS</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>1</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Ivana Kantnerová</CeleJmeno>
+            <Zkratka>Ka</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+      </RozvrhDne>
+    </Den>
+    <Den>
+      <Nazev>Čtvrtek</Nazev>
+      <Zkratka>Ct</Zkratka>
+      <RozvrhDne>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Webové aplikace (Teorie)</Nazev>
+            <Zkratka>WA</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>1</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Jan Pavlát</CeleJmeno>
+            <Zkratka>Pv</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Matematika</Nazev>
+            <Zkratka>M</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>4</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Eva Neugebauerová</CeleJmeno>
+            <Zkratka>Ng</Zkratka>
+            <TridniUcitel>C4b</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+            <Zkratka>PIS</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Lucie Brčáková</CeleJmeno>
+            <Zkratka>Bc</Zkratka>
+            <TridniUcitel>C4c</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Programové vybavení (Teorie)</Nazev>
+            <Zkratka>PV</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>1</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Alenka Reichlová</CeleJmeno>
+            <Zkratka>Re</Zkratka>
+            <TridniUcitel>C3b</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Anglický Jazyk</Nazev>
+            <Zkratka>A</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>4</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Bc. Šárka Páltiková</CeleJmeno>
+            <Zkratka>Pa</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Český jazyk a literatura</Nazev>
+            <Zkratka>C</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>3</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>MUDr. Kristina Studénková</CeleJmeno>
+            <Zkratka>Su</Zkratka>
+            <TridniUcitel>C2a</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+            <Zkratka>PSS</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>1</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>24</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>C4b</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Aplikovaná matematika</Nazev>
+                <Zkratka>AM</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Český jazyk a literatura</Nazev>
+                <Zkratka>C</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>3</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Matematika</Nazev>
+                <Zkratka>M</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Teorie)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Technický projekt</Nazev>
+                <Zkratka>TP</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Teorie)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Lukáš Masopust</CeleJmeno>
+            <Zkratka>Ms</Zkratka>
+            <TridniUcitel>C3c</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Teorie)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Počítačové systémy a sítě (Cvičení)</Nazev>
+                <Zkratka>PSS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+      </RozvrhDne>
+    </Den>
+    <Den>
+      <Nazev>Pátek</Nazev>
+      <Zkratka>Pa</Zkratka>
+      <RozvrhDne>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+            <Zkratka>PIS</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>19</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+                <Zkratka>CIT</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Lucie Brčáková</CeleJmeno>
+            <Zkratka>Bc</Zkratka>
+            <TridniUcitel>C4c</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+            <Zkratka>PIS</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>19</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Cvičení ze správy IT (Cvičení)</Nazev>
+                <Zkratka>CIT</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Programové vybavení (Cvičení)</Nazev>
+                <Zkratka>PV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Lucie Brčáková</CeleJmeno>
+            <Zkratka>Bc</Zkratka>
+            <TridniUcitel>C4c</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Teorie)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Podnikové informační systémy (Cvičení)</Nazev>
+                <Zkratka>PIS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Anglický Jazyk</Nazev>
+            <Zkratka>A</Zkratka>
+            <Typ>Teorie</Typ>
+            <HodinTydne>4</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>29</Nazev>
+            <Patro>4</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Bc. Šárka Páltiková</CeleJmeno>
+            <Zkratka>Pa</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Anglický Jazyk</Nazev>
+                <Zkratka>A</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>4</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Tělesná Výchova</Nazev>
+            <Zkratka>TV</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>TV</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Tělesná Výchova</Nazev>
+                <Zkratka>TV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Mgr. Pavel Lopocha</CeleJmeno>
+            <Zkratka>Lo</Zkratka>
+            <TridniUcitel>A2b</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Tělesná Výchova</Nazev>
+                <Zkratka>TV</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Databázové systémy (Cvičení)</Nazev>
+            <Zkratka>DS</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>17</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Ivana Kantnerová</CeleJmeno>
+            <Zkratka>Ka</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>false</Volna>
+          <Predmet>
+            <Nazev>Databázové systémy (Cvičení)</Nazev>
+            <Zkratka>DS</Zkratka>
+            <Typ>Cviceni</Typ>
+            <HodinTydne>2</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>17</Nazev>
+            <Patro>3</Patro>
+            <KmenovaTrida>None</KmenovaTrida>
+            <Typ>Cviceni</Typ>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Webové aplikace (Cvičení)</Nazev>
+                <Zkratka>WA</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Ing. Ivana Kantnerová</CeleJmeno>
+            <Zkratka>Ka</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety>
+              <Predmet>
+                <Nazev>Databázové systémy (Teorie)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Teorie</Typ>
+                <HodinTydne>1</HodinTydne>
+              </Predmet>
+              <Predmet>
+                <Nazev>Databázové systémy (Cvičení)</Nazev>
+                <Zkratka>DS</Zkratka>
+                <Typ>Cviceni</Typ>
+                <HodinTydne>2</HodinTydne>
+              </Predmet>
+            </VyucovanePredmety>
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+        <Hodina>
+          <Volna>true</Volna>
+          <Predmet>
+            <Nazev>Volna</Nazev>
+            <Zkratka />
+            <Typ>Teorie</Typ>
+            <HodinTydne>0</HodinTydne>
+          </Predmet>
+          <Ucebna>
+            <Nazev>Bez názvu</Nazev>
+            <Patro>0</Patro>
+            <KmenovaTrida />
+            <Typ>Teorie</Typ>
+            <VyucovanePredmety />
+          </Ucebna>
+          <Ucitel>
+            <CeleJmeno>Bez jména</CeleJmeno>
+            <Zkratka>xx</Zkratka>
+            <TridniUcitel>None</TridniUcitel>
+            <VyucovanePredmety />
+          </Ucitel>
+        </Hodina>
+      </RozvrhDne>
+    </Den>
+  </Tyden>
+  <Hodnoceni>100</Hodnoceni>
+</Rozvrh>

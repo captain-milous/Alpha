@@ -33,11 +33,15 @@
             Console.WriteLine("Vítejte v programu Alpha! (Generátor rozvrhů)");
             Console.WriteLine("Autor: Miloš Tesař C4b");
             Console.WriteLine(oddelovac);
+            Rozvrh aktualC4b = new Rozvrh();
             try
             {
                 predmety = MetodyXML.ImportPredmety();
                 ucebny = MetodyXML.ImportUcebny();
                 ucitele = MetodyXML.ImportUcitele();
+                aktualC4b = Metody.OhodnotRozvrh(MetodyXML.ImportRozvrh("import.xml"));
+
+                Console.WriteLine(aktualC4b);
             }
             catch (Exception ex)
             {
@@ -45,39 +49,7 @@
                 Console.WriteLine(ex.ToString() + "\n\n");
                 run = false;
             }
-            
-            Rozvrh test = MetodyXML.ImportRozvrh("export.xml");
-            //MetodyXML.ExportRozvrh(test, "test");
-            /*test.Nazev = "Aktuální";
-            int k = 0;
-            foreach(Predmet predmet in predmety)
-            {
-                Console.WriteLine(k + ". " + predmet.Nazev);
-                k++;
-            }
-            for(int i = 0; i < 5; i++)
-            {
-                Console.WriteLine(test.Tyden[i].Nazev);
-                for(int j = 1; j <= 10; j++)
-                {
-                    Console.Write(j + ". hodina: ");
-                    int inputTest = Convert.ToInt32(Console.ReadLine());
-                    if (inputTest >= 0 && inputTest <= 16)
-                    {
-                        test.Tyden[i].AddHodina(new Hodina(predmety[inputTest]));
-                        //test.SetHodina(i, j, new Hodina(predmety[inputTest]) );
-                    }
-                    else
-                    {
-                        test.Tyden[i].AddHodina(new Hodina());
-                    }
-                }
-            }
-            MetodyXML.ExportRozvrh(test, "export");*/
-            //test = Metody.OhodnotRozvrh(test);
-            Console.WriteLine(test);
-            //Console.WriteLine(test.PodrobnyVypis());
-            
+
 
             Console.ReadLine();
             int input = 0;
@@ -137,6 +109,11 @@
                     run = true;
                 }
                 Console.WriteLine(oddelovac);
+            }
+
+            if(trida == "C4b")
+            {
+                ohodnocRozvrhy.Add(aktualC4b);
             }
 
             if (runThreads)
