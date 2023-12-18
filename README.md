@@ -4,27 +4,28 @@ Tento projekt v jazyce C# obsahuje třídy a metody pro generování náhodných
 
 ## Spuštění
 ### Předpoklady
-Pro správné spuštění programu je nutné mít nainstalovaný .NET runtime.
+Pro správné spuštění programu je nutné být na počítačovém zařízení Windows 10 a více
 
 ### Postup
-Stáhněte si zdrojový kód do svého počítače.
-Otevřete příkazový řádek a přejděte do adresáře s projektem.
-Spusťte program pomocí příkazu dotnet run.
-### Konfigurace
-Projekt obsahuje několik parametrů, které lze konfigurovat před spuštěním:
+Stáhněte si zazipovaný soubor do svého počítače.
+Soubor Extrahujte.
+Najděte jděte do adresáře: "Alpha\RozvrhHodin\bin\Debug\net7.0" a zde zapněte aplikaci: "RozvrhHodin.exe"
 
-threadCount: Počet vláken pro paralelní generování a hodnocení rozvrhů.
+### Konfigurace
+Projekt obsahuje několik parametrů, které lze konfigurovat po spuštění:
+
+trida: Třída pro kterou chcete vytvářet rozvrhy.
 casovyLimit: Časový limit běhu programu v sekundách.
-Tyto parametry můžete upravit v souboru Program.cs ve statické třídě Program před spuštěním programu.
 
 ## Vstupní Data
-Program předpokládá, že máte definované předměty, učebny a učitele. Tyto informace jsou načítány ze souborů XML (import.xml). V případě potřeby můžete tyto soubory upravit nebo doplnit podle vlastních potřeb.
+Program předpokládá, že máte definované předměty, učebny a učitele. Tyto informace jsou načítány ze souborů XML (v adresáři: "Alpha\RozvrhHodin\bin\Debug\net7.0\data"). V případě potřeby můžete tyto soubory upravit nebo doplnit podle vlastních potřeb.
 
 ## Ovládání Programu
-Po spuštění programu budete vyzváni k výběru třídy (C4a, C4b nebo C4c) a nastavení časového limitu běhu programu. Po zadaní těchto informací začne program generovat a ohodnocovat rozvrhy. Výsledky, včetně počtu vygenerovaných a ohodnocených rozvrhů, budou zobrazeny na konci běhu programu.
+Po spuštění programu se program pokusí načíst vstupní data. Pokud se mu nepodaří je nepodaří načíst, vyhodí vám hlášku "Nepovedlo se načíst vstupní data." a program se ukončí. Tuto chybu lze předejít tím, že nebudete upravovat vstupní data.
+Následně budete vyzváni ke konfiguraci. Nejprve pomocí výběru třídy (C4a, C4b nebo C4c) a následně nastavením časového limitu běhu programu. Po zadaní těchto informací začne program generovat a ohodnocovat rozvrhy. Výsledky, včetně počtu vygenerovaných a ohodnocených rozvrhů, budou zobrazeny na konci běhu programu.
 
 ## Generování Rozvrhu
-Rozvrhy se generují jednoduše v 5-ti krocích
+Rozvrhy se generují v 5-ti krocích
 
 ### Krok 1: Přiřazení Učitele k Předmětu
 Pro každý předmět v seznamu predmety se vytváří instance třídy Hodina.
@@ -36,7 +37,7 @@ Pokud existuje více učeben, jedna z nich je náhodně vybrána a přiřazena h
 ### Krok 3: Vytvoření Surového Rozvrhu
 Na základě přiřazených hodin s učitelem a učebnou se vytváří surový rozvrh obsahující potřebný počet hodin pro každý předmět.
 ### Krok 4: Přidání Volných Hodin a Promíchání
-Pokud surový rozvrh obsahuje méně než 50 hodin, jsou přidány volné hodiny, dokud dosáhnou této minimální hodnoty.
+Pokud surový rozvrh obsahuje méně než 50 hodin, jsou přidány volné hodiny, dokud nedosáhnou této hodnoty.
 Pokud surový rozvrh obsahuje více než 50 hodin, je vyhozena výjimka s upozorněním na příliš mnoho hodin.
 ### Krok 5: Vytvoření Strukturovaného Rozvrhu
 Surový rozvrh je následně promíchán a rozdělen do strukturovaného týdenního rozvrhu.
@@ -45,13 +46,14 @@ Výsledný rozvrh obsahuje 5 dní v týdnu, každý s 10 hodinami.
 Pokud nelze najít učitele pro některý předmět, nebo pokud neexistuje vhodná učebna pro některou hodinu, jsou vyvolány výjimky s odpovídajícím upozorněním.
 
 ## Hodnocení Rozvrhu
-Metoda OhodnotRozvrh slouží k ohodnocení kvality daného rozvrhu na základě několika pravidel. Následující popis vysvětluje jednotlivé pravidla hodnocení rozvrhu:
+Hodnocení kvality daného rozvrhu je na základě několika pravidel:
 
 ### Pravidlo 1: Bonus/Malus za Přítomnost Hodiny v Rozvrhu
 Každému políčku v rozvrhu je přidělen bonus/malus v závislosti na tom, zda je v daném časovém slotu obsazeno nebo volno.
 Příklady zahrnují preferované hodiny a dny v týdnu, kdy je účast lepší nebo horší.
-### Pravidlo 2: Kontrola Duplicitních Teoretických Hodin
-Kontroluje, zda v rozvrhu neexistují duplicitní teoretické hodiny téhož předmětu v jednom dni.
+(Například pátek 9. hodina je pro někoho +100 bodů, pro někoho -100 bodů. Hodně se to liší, pokud chodíte do zaměstnání, nebo jste student. Také ranní hodiny jsou někdy oblíbené a někdy ne, apod. Nakonec každé políčko bude mít nějaký bonus/penále.)
+### Pravidlo 2: Kontrola stejných Teoretických Hodin v jednom dni
+Kontroluje, zda v rozvrhu neexistují dvě nebo více teoretické hodiny téhož předmětu v jednom dni.
 Pokud ano, snižuje hodnocení rozvrhu.
 ### Pravidlo 3: Vyhodnocení Přechodů mezi Učebnami
 Hodnotí, zda při přechodech mezi hodinami dochází k přesunu do jiného patra nebo jiné učebny.
@@ -64,14 +66,16 @@ Hodnotí, zda denní počet vykonaných hodin odpovídá optimálnímu rozmezí 
 Přebytek nebo nedostatek hodin snižuje hodnocení.
 ### Pravidlo 6: Kontrola Cvičení a Teoretických Hodin
 Kontroluje, zda dvouhodinová nebo tříhodinová cvičení jsou umístěna za sebou.
-Nepřípustné konfigurace vedou k penalizaci.
+Pokud nalezne, že nejsou vedle sebe, hodnocení se sníží.
 ### Pravidlo 7: Omezení na Výuku Matematiky a Profilových Předmětů
 Matematika a profilové předměty by neměly být vyučovány první hodinu nebo po obědě.
 Porušení pravidla snižuje hodnocení.
 ### Pravidlo 8: Bonus za Výuku od Třídního Učitele
-Poskytuje bonus, pokud třídní učitel vyučuje danou třídu.
+Poskytuje bonus, pokud třídní učitel dané třídy vyučuje danou alespoň jeden předmět v rozvrhu.
+Pokud ne, nastane penalizace.
 ### Pravidlo 9: Bonus za Výuku ve Kmenové Třídě
-Poskytuje bonus, pokud učitel vyučuje ve své kmenové třídě.
+Poskytuje bonus, pokud se předmět vyučuje ve kmenové třídě zadané třídy.
+Pokud ne, nastane penalizace.
 ### Pravidlo 10: Pravidlo Wellbeing
 Reflektuje osobní preference ohledně učitelů, učeben, a předmětů.
 Vytváří penalizace nebo bonusy na základě osobních preferencí.
@@ -79,4 +83,5 @@ Vytváří penalizace nebo bonusy na základě osobních preferencí.
 Výjimky jsou vyvolány v případě, že jsou porušena pravidla nebo došlo k neočekávané situaci při hodnocení.
 
 ## Autor
-Miloš Tesař, C4b
+Miloš Tesař
+Žák z C4b na SPŠE Ječná
