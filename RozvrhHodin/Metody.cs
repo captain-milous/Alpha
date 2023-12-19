@@ -39,6 +39,41 @@ namespace RozvrhHodin
         }
 
         /// <summary>
+        /// Najde a aktualizuje nejlepší rozvrhy podle hodnocení nového rozvrhu.
+        /// </summary>
+        /// <param name="rozvrhy">Seznam existujících rozvrhů, do kterého se přidává nový rozvrh.</param>
+        /// <param name="novyRozvrh">Nový rozvrh, který se má přidat do seznamu.</param>
+        /// <returns>Seznam nejlepších rozvrhů, omezený na maximálně pět prvků.</returns>
+        public static List<Rozvrh> NajdiNejlepsiRozvrhy(List<Rozvrh> rozvrhy, Rozvrh novyRozvrh)
+        {
+            if (rozvrhy.Count == 0)
+            {
+                rozvrhy.Add(novyRozvrh);
+            }
+            else
+            {
+                int index = 0;
+                while (index < rozvrhy.Count && novyRozvrh.Hodnoceni < rozvrhy[index].Hodnoceni)
+                {
+                    index++;
+                }
+                if (index < 5)
+                {
+                    rozvrhy.Insert(index, novyRozvrh);
+                    if (rozvrhy.Count > 5)
+                    {
+                        rozvrhy.RemoveAt(5);
+                    }
+                }
+                else
+                {
+                    GC.SuppressFinalize(novyRozvrh);
+                }
+            }
+            return rozvrhy;
+        }
+
+        /// <summary>
         /// Převede desítkové číslo na hexadecimální formát a vrátí výsledek jako řetězec.
         /// </summary>
         /// <param name="num">Desítkové číslo k převodu</param>
@@ -53,6 +88,12 @@ namespace RozvrhHodin
             return output;
         }
 
+        /// <summary>
+        /// Metoda pro ohodnocení rozvrhu
+        /// </summary>
+        /// <param name="rozvrh">Rozvrh, který chceme ohodnotit.</param>
+        /// <returns>Rozvrh, který je ohodnocený</returns>
+        /// <exception cref="Exception">Index out of Range, který by nikdy neměl nastat.</exception>
         public static Rozvrh OhodnotRozvrh(Rozvrh rozvrh)
         {
             // 1 - Každému políčku v rozvrhu určete bonus/malus za to, když tam hodina je/není.
@@ -349,24 +390,55 @@ namespace RozvrhHodin
             foreach (Den den in rozvrh.Tyden)
             {
                 List<Hodina> rozvrhDne = den.RozvrhDne;
-                List<Hodina> hodiny = new List<Hodina>();
                 for (int i = 0; i < 10; i++)
                 {
                     if (!(rozvrhDne[i].Volna))
                     {
-                        bool pouzito = false;
-                        for (int j = 0; j < pouziteHodiny.Count; j++)
+                        if (rozvrhDne[i].GetZkratkaUcitele() == "Pa" )
                         {
-                            if (rozvrhDne[i].GetNazevPredmetu() == pouziteHodiny[j].GetNazevPredmetu())
-                            {
-                                points -= 100;
-                                pouzito = true;
-                            }
+                            points -= 100;
                         }
-                        if (!pouzito)
+                        if (rozvrhDne[i].GetZkratkaUcitele() == "Ma")
                         {
-                            pouziteHodiny.Add(rozvrhDne[i]);
-                            points += 10;
+                            points += 100;
+                        }
+                        if (rozvrhDne[i].GetZkratkaUcitele() == "Re")
+                        {
+                            points += 99;
+                        }
+                        if (rozvrhDne[i].GetZkratkaUcitele() == "Mo")
+                        {
+                            points += 69;
+                        }
+                        if (rozvrhDne[i].GetZkratkaUcitele() == "Ms")
+                        {
+                            points += 50;
+                        }
+                    }
+                    if(rozvrhDne[i].GetTypPredmetu() == TypVyuky.Cviceni)
+                    {
+                        if(rozvrhDne[i].GetNazevUcebny() == "19")
+                        {
+                            points += 5;
+                        }
+                        if (rozvrhDne[i].GetNazevUcebny() == "18")
+                        {
+                            points += 4;
+                        }
+                        if (rozvrhDne[i].GetNazevUcebny() == "17")
+                        {
+                            points += 3;
+                        }
+                    }
+                    else
+                    {
+                        if (rozvrhDne[i].GetNazevUcebny() == "29")
+                        {
+                            points -= 42;
+                        }
+                        if (rozvrhDne[i].GetNazevUcebny() == "8b")
+                        {
+                            points += 69;
                         }
                     }
                 }

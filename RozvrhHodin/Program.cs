@@ -46,7 +46,7 @@
                 Console.WriteLine(originalC4b);
                 Console.Write("Zmáčkněte Enter pro spuštění.");
                 Console.ReadLine();
-
+                Console.WriteLine(oddelovac);
             }
             catch (Exception ex)
             {
@@ -145,6 +145,31 @@
                 Console.WriteLine($"Celkový počet lepších rozvrhů než originál: {pocetLepsichRoz}");
 
 
+                Console.WriteLine($"\nTop {ohodnocRozvrhy.Count} nejlepších rozvrhů:");
+                foreach(Rozvrh r in ohodnocRozvrhy)
+                {
+                    Console.WriteLine(r.ToString());
+                }
+
+                Console.WriteLine("Chcete podrobný výpis rozvrhů?\n1 - Ano\n2 - Ne");
+                try
+                {
+                    input = Convert.ToInt32(Console.ReadLine());
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Zadaná Hodnota musí být integer!");
+                    input = 0;
+                }
+                if (input == 1)
+                {
+                    foreach (Rozvrh r in ohodnocRozvrhy)
+                    {
+                        Console.WriteLine(oddelovac);
+                        Console.WriteLine(r.PodrobnyVypis());
+                    }
+                }
+
             }
             else
             {
@@ -202,23 +227,23 @@
                         hodnocenyRozvrh = vygenerRozvrhy[0];
                         vygenerRozvrhy.RemoveAt(0);
                         hodnocenyRozvrh = Metody.OhodnotRozvrh(hodnocenyRozvrh);
-                        
+                        pocetHodRozvrhu++;
                     }
                 }
                 if (hodnocenyRozvrh.Hodnoceni > 0)
                 {
-                    if(hodnocenyRozvrh.Hodnoceni > originalC4b.Hodnoceni)
+                    lock (lockObject)
+                    {
+                        ohodnocRozvrhy = Metody.NajdiNejlepsiRozvrhy(ohodnocRozvrhy, hodnocenyRozvrh);
+                    }
+                    if (hodnocenyRozvrh.Hodnoceni > originalC4b.Hodnoceni)
                     {
                         lock(lockObject)
                         {
                             pocetLepsichRoz++;
                         }
                     }
-                    lock (lockObject)
-                    {
-                        //ohodnocRozvrhy.Add(hodnocenyRozvrh);
-                        pocetHodRozvrhu++;
-                    }
+                    
                 }
                 GC.SuppressFinalize(hodnocenyRozvrh);
             }
