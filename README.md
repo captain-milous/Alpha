@@ -95,6 +95,6 @@ Vytváří penalizace nebo bonusy na základě osobních preferencí.
 Výjimky jsou vyvolány v případě, že jsou porušena pravidla nebo došlo k neočekávané situaci při hodnocení.
 
 ## Autor
-Miloš Tesař
+Miloš Tesař C4b
 
-Žák z C4b na SPŠE Ječná Praha 2
+https://github.com/captain-milous/Alpha
