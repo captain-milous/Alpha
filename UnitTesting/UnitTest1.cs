@@ -111,7 +111,7 @@ namespace UnitTesting
             }
             catch (Exception ex)
             {
-
+                Assert.Fail(ex.Message);
             }
         }
 
