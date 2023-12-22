@@ -22,6 +22,14 @@ Konfigurace aplikace proběhne po spuštění programu.
 Program předpokládá, že máte definované předměty, učebny a učitele. Tyto informace jsou načítány ze souborů XML (v adresáři: "Alpha\RozvrhHodin\bin\Debug\net7.0\data"). 
 V případě potřeby můžete tyto soubory upravit nebo doplnit podle vlastních potřeb.
 
+Pokud budete chtít změnit vstupní data musíte:
+- Vybrat si která data chcete změnit. (Predmety, Ucebny nebo Ucitele)
+- Přesuňte se do adresáře "Alpha\RozvrhHodin\bin\Debug\net7.0\data"
+- Vyberte složku, podle toho jaká data chcete měnit a do ní se přesuňte
+- Ve složce naleznete soubor "import.xml" (Podle jeho struktury vytvořte vlastní)
+- Přejmenujte/smažte "import.xml" a váš xml soubor přejmenujte na "import.xml"
+(Pokud jste postupovali správně, program bude pracovat s vašemi daty)
+
 ## Ovládání Programu
 Po spuštění programu se program pokusí načíst vstupní data. 
 - Pokud se mu nepodaří je načíst, vyhodí vám chybnou hlášku "Nepovedlo se načíst vstupní data." a program se automaticky ukončí. 
@@ -34,7 +42,7 @@ Následně budete vyzváni ke konfiguraci.
 Po zadaní těchto informací začne program generovat a ohodnocovat rozvrhy. 
 - (Více informací v sekci Generování Rozvrhu a Hodnocení Rozvrhu)
 
-Výsledky, včetně počtu vygenerovaných a ohodnocených rozvrhů, budou zobrazeny na konci běhu programu.
+Výsledky, včetně počtu vygenerovaných, ohodnocených a počet lepších rozvrhů než je původní rozvrh, budou zobrazeny na konci běhu programu. Také se zobrazí Top 5 rozvrhů, které program zvládl vygenerovat.
 
 ## Generování Rozvrhu
 Rozvrhy se generují v 5-ti krocích
